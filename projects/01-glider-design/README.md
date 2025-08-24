@@ -1,28 +1,39 @@
-# Glider Design and Assembly (OpenVSP)
+# Glider Design Project
 
-**Role:** Designer / Analyst  
-**Tools:** (fill e.g., OpenVSP, SOLIDWORKS, Inventor, Mastercam, COMSOL, MATLAB, Python, C++)  
-**Dates:** (e.g., 2024)
+## Overview
+Unpowered glider designed using balsawood and clay, applying aerodynamics from SPC201 course. Achieved 20m in test, 34m in open area.
 
-## Summary
-- What problem did you solve? Keep this to 2–3 lines.
-- What approach did you take? (Design, simulation, control, analysis)
-- What is the final outcome? Prototype, code, report, award, etc.
 
-## Key Results (use numbers)
-- Example: Achieved L/D = XX at Re = YY
-- Example: Reduced mass by ZZ% via topology optimization
-- Example: Trajectory error < 2% vs. reference
-- Example: Rated for TT Nm torque with safety factor S
+## Institution
+Zewail City of Science and Technology  
+Course: SPC201 - Introduction to Air and Space Flights
 
-## Repository Contents
-- `/images/` — screenshots, plots, CAD renders (2–4 best images).
-- `/code/` — source files (if applicable).
-- `/docs/` — reports, PDF, notes.
+## Abstract
+Design unpowered glider relying on glide characteristics. Used 3mm/4mm balsawood sheets, 6mm rod, clay for nose weight. Wing AR ~8 (later 16). Stabilizer at back. Airfoil-shaped wing for lift.
 
-## How to Run / View
-- If code: how to set up environment and run.
-- If CAD: where to find STEP/STL previews or screenshots.
+## Introduction
+Shaped wing as airfoil despite flat plate recommendation. Initial 3mm thin, unstable; increased to 4mm for stability. AR 16 reduced induced drag (Di = L * CL / (π AR)).
 
-## Notes
-- Links to external large files (Google Drive) if needed.
+Desirable traits: High L/D, suitable CL/CD, alpha=5°, camber, t/c, low Re, CM.
+
+## Methodology
+Used CFD software for calculations:
+- CM_y vs alpha
+- CL vs alpha
+- CD_0 vs alpha
+Mass ~22.56g. Angle of attack 5°.
+
+Dimensions: Wing 40cm x 4.5cm x 4mm, stabilizer/fuselage per blueprint.
+
+Dihedral wing for roll stability.
+
+## Results and Discussion
+Built model: Sanded airfoil wing, assembled fuselage, tail, wing. Flight: 20m test, 34m open.
+
+## Conclusions
+Applied aerodynamics to balance stability/performance. Demonstrated CFD use in design.
+
+## References
+1. VSP Aircraft Analysis User Manual: https://openvsp.org/wiki/lib/exe/fetch.php?media=vsp_aircraft_analysis_user_manual.pdf
+2. Airfoil Tools: http://www.airfoiltools.com/
+3. Aerodynamics of Flight: https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/glider_handbook/gfh_ch03.pdf
