@@ -19,7 +19,14 @@ This repository collects my key engineering and aerospace projects. Each folder 
 - [JUICE Orbital Mechanics & Trajectory (Python + analytics)](projects/10-juice-orbital-analysis)
 
 ---
+### Programming Projects
+- **Shape Matching Game (C++)**  
+  30+ feature puzzle game built with OOP principles.  
+  🔗 [View Repository](https://github.com/Naqeeb1124/FOR-C-PROJECT)
 
+- **Hospital & Ambulance Management System (C++)**  
+  Built with data structures & algorithms for resource management.  
+  🔗 [View Repository](https://github.com/Fatma-Hassaan/Ambulance_management_system)
 
 ---
 
