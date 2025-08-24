@@ -20,20 +20,6 @@ This repository collects my key engineering and aerospace projects. Each folder 
 
 ---
 
-## Repo Tips
-
-- **Structure:** `/projects/<project>` holds code, images, and a mini README.  
-- **Big files:** Install Git LFS and commit large binaries (CAD/COMSOL/STEP).  
-- **Screenshots:** Add 2–4 images in each project folder (`images/`) to make it recruiter-friendly.  
-- **Results:** Put numbers in the README (e.g., L/D, % mass reduction, error %, torque rating).
-
-### Git LFS Quickstart
-```bash
-git lfs install
-# (already tracked in .gitattributes)
-git add .gitattributes
-git commit -m "Enable Git LFS"
-```
 
 ---
 
