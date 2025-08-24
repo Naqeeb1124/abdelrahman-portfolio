@@ -1,0 +1,27 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# C/C++
+build/
+*.o
+*.obj
+*.exe
+
+# MATLAB
+*.asv
+
+# VS Code
+.vscode/
+
+# Mac/Win
+Icon?
