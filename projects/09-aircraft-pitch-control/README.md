@@ -5,8 +5,7 @@ Final report on designing and analyzing a control system for aircraft pitch moti
 
 
 ## Institution
-Zewail City for Science and Technology  
-Supervisors: Dr. Mohamed L. Shaltot, Eng. Somia Talat  
+Zewail City for Science and Technology    
 Date: May 16, 2025
 
 ## Contents
