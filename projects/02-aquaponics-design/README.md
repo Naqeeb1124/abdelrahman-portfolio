@@ -1,28 +1,30 @@
-# Aquaponics System Mechanical Design (SOLIDWORKS, Inventor)
+# Aquaponics System Design
 
-**Role:** Designer / Analyst  
-**Tools:** (fill e.g., OpenVSP, SOLIDWORKS, Inventor, Mastercam, COMSOL, MATLAB, Python, C++)  
-**Dates:** (e.g., 2024)
+## Overview
+Design of a small-scale aquaponics system integrating aquaculture and hydroponics using fluid mechanics principles.
 
-## Summary
-- What problem did you solve? Keep this to 2–3 lines.
-- What approach did you take? (Design, simulation, control, analysis)
-- What is the final outcome? Prototype, code, report, award, etc.
 
-## Key Results (use numbers)
-- Example: Achieved L/D = XX at Re = YY
-- Example: Reduced mass by ZZ% via topology optimization
-- Example: Trajectory error < 2% vs. reference
-- Example: Rated for TT Nm torque with safety factor S
+## Institution
+Zewail City of Science and Technology  
+Course: ENGR207 - Fluid Mechanics
 
-## Repository Contents
-- `/images/` — screenshots, plots, CAD renders (2–4 best images).
-- `/code/` — source files (if applicable).
-- `/docs/` — reports, PDF, notes.
+## Abstract
+Sustainable system combining fish farming and plant cultivation in a closed loop, with fish waste nourishing plants and plants filtering water.
 
-## How to Run / View
-- If code: how to set up environment and run.
-- If CAD: where to find STEP/STL previews or screenshots.
+## Introduction
+Aquaponics combines aquaculture and hydroponics. Fish waste provides nutrients for plants; plants clean water for fish. Components: fish tank, grow beds, circulation system.
 
-## Notes
-- Links to external large files (Google Drive) if needed.
+## Methodology
+Analyzed bell siphon, venturi meter, venturi aerator with equations for flow rates, Reynolds numbers, dimensions.
+
+## Results
+Fish tank: 1m³, 1000L. Grow bed: Rectangular, gravel-filled. Circulation: 300L/h with pump, pipes, valves. Achieves nutrient distribution and oxygenation.
+
+## Conclusions
+Affordable ($1900), sustainable food production with year-round yield, reduced environmental impact, efficient water use.
+
+## References
+1. Haryanto et al. (2019) J. Phys.: Conf. Ser. 1211 012047
+2. AIP Conf. Proc. 2197, 020001 (2020)
+3. A. Reyes Yanes, P. Martinez, R. Ahmad, Towards automated aquaponics
+... (and others as listed)
