@@ -1,28 +1,38 @@
-# Cold Plate with Fin/Pin & Topology-Optimized Channels (COMSOL)
+# ASME Cold Plate Design Competition
 
-**Role:** Designer / Analyst  
-**Tools:** (fill e.g., OpenVSP, SOLIDWORKS, Inventor, Mastercam, COMSOL, MATLAB, Python, C++)  
-**Dates:** (e.g., 2024)
+## Overview
+Progress report for ASME Cold Plate Design Competition focusing on heat transfer, fluid flow, and optimized fin/channel design.
 
-## Summary
-- What problem did you solve? Keep this to 2–3 lines.
-- What approach did you take? (Design, simulation, control, analysis)
-- What is the final outcome? Prototype, code, report, award, etc.
+## Institution
+Zewail City for Science and Technology  
+Supervisors: Dr. Ahmed Elatyar, Eng. Tarek Shaker  
+Date: May 20, 2025
 
-## Key Results (use numbers)
-- Example: Achieved L/D = XX at Re = YY
-- Example: Reduced mass by ZZ% via topology optimization
-- Example: Trajectory error < 2% vs. reference
-- Example: Rated for TT Nm torque with safety factor S
-
-## Repository Contents
-- `/images/` — screenshots, plots, CAD renders (2–4 best images).
-- `/code/` — source files (if applicable).
-- `/docs/` — reports, PDF, notes.
-
-## How to Run / View
-- If code: how to set up environment and run.
-- If CAD: where to find STEP/STL previews or screenshots.
-
-## Notes
-- Links to external large files (Google Drive) if needed.
+## Contents
+1. Problem Definition
+   - Project Objective
+   - Design Requirements
+   - Performance Metrics
+2. Physical Model and Geometry
+   - Cold Plate Assembly
+   - Fin Design Concepts
+3. Mathematical Model
+   - Heat Transfer Modes
+   - Thermal Resistance Network
+   - Fluid Flow Model
+   - Pressure Drop Calculation
+4. Simulation Methodology
+   - Simulation Approach
+   - Boundary Conditions
+5. Results and Discussion
+   - Simulation Results
+   - Performance Analysis (Thermal, Hydraulic, Material Efficiency)
+   - Fin Selection
+6. Part 1: Analysis & Simulation of Selected Fin Design
+   - Mesh
+7. Part 2: Topology Optimized Channel Design
+   - Optimization Problem
+8. Theoretical vs Simulation Results
+   - Fin Design
+   - Topology Optimized Design
+9. Conclusion
