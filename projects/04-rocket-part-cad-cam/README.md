@@ -1,28 +1,28 @@
-# Mini Rocket Part CAD & CAM (SOLIDWORKS, Inventor, Mastercam)
+# Rocket Part CAD + CAM
 
-**Role:** Designer / Analyst  
-**Tools:** (fill e.g., OpenVSP, SOLIDWORKS, Inventor, Mastercam, COMSOL, MATLAB, Python, C++)  
-**Dates:** (e.g., 2024)
+## Overview
+Design and manufacturing processes for P-1003 and P-1004 Rocket Assemblies using external turning, drilling, boring, grooving, threading, and parting off.
 
-## Summary
-- What problem did you solve? Keep this to 2–3 lines.
-- What approach did you take? (Design, simulation, control, analysis)
-- What is the final outcome? Prototype, code, report, award, etc.
 
-## Key Results (use numbers)
-- Example: Achieved L/D = XX at Re = YY
-- Example: Reduced mass by ZZ% via topology optimization
-- Example: Trajectory error < 2% vs. reference
-- Example: Rated for TT Nm torque with safety factor S
 
-## Repository Contents
-- `/images/` — screenshots, plots, CAD renders (2–4 best images).
-- `/code/` — source files (if applicable).
-- `/docs/` — reports, PDF, notes.
+## Institution
+Zewail City of Science and Technology  
+Course: REE 222 - Engineering Production
 
-## How to Run / View
-- If code: how to set up environment and run.
-- If CAD: where to find STEP/STL previews or screenshots.
+## P-1003 Rocket Assembly
+- **Initial Dimensions**: Length 0.8 in, Diameter 1 in
+- **Processes**: External Turning, Drilling, Boring, Grooving, Parting Off
 
-## Notes
-- Links to external large files (Google Drive) if needed.
+## P-1004 Rocket Assembly
+- **Initial Dimensions**: Length 1.2 in, Diameter 1 in
+- **Processes**: External Turning, Grooving, Drilling, Internal Threading, Internal Taper Turning, Parting
+
+## Calculations
+- Machine time increases due to setup and moving time between processes.
+
+## Results
+- **P-1003**: Actual time 2m 24s, Theoretical time 1m 1s (video sped up, setup time ignored, feed rate 0.0046875 in/rev vs 0.004 in/rev)
+- **P-1004**: Actual time 42s, Theoretical time 1m 2s (video sped up, setup time ignored, feed rate 0.019 in/rev vs 0.0028 in/rev)
+
+## Visuals
+- CAD and CAM photos included for design and machining verification.
