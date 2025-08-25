@@ -17,6 +17,8 @@ This repository collects my key engineering and aerospace projects. Each folder 
 - [Cold Plate with Fin/Pin & Topology-Optimized Channels (COMSOL)](projects/08-cold-plate-topopt)
 - [Aircraft Pitch Control System (MATLAB)](projects/09-aircraft-pitch-control)
 - [JUICE Orbital Mechanics & Trajectory (Python + analytics)](projects/10-juice-orbital-analysis)
+- [Computational Fluid Dynamics Study of NACA0015 Airfoil(Ansys + Pointwise)](projects/11-)
+- 
 
 ---
 ### Programming Projects
