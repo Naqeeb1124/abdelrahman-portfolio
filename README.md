@@ -4,8 +4,7 @@
 **Email:** abdelrahman11246@gmail.com  
 **Phone:** +20 1010 368 288 / +971 50 721 0188
 
-This repository collects my key engineering and aerospace projects. Each folder contains a short README (summary, tools, results) and selected code/assets. Large CAD/COMSOL files should be stored with Git LFS (see below) or linked via cloud.
-
+This repository collects my key engineering and aerospace projects. Each folder contains a short README (summary, tools, results) and selected code/assets. 
 ## Projects
 - [Glider Design and Assembly (OpenVSP)](projects/01-glider-design)
 - [Aquaponics System Mechanical Design (SOLIDWORKS, Inventor)](projects/02-aquaponics-design)
