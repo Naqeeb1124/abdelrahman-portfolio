@@ -31,8 +31,8 @@ This repository collects my key engineering and aerospace projects. Each folder 
   Built with data structures & algorithms for resource management.  
   🔗 [View Repository](https://github.com/Fatma-Hassaan/Ambulance_management_system)
 
-- **Child Development Project Website (HTML, CSS, JS, JSX, JSON)**
-  Built with Vite, Node.js + npm.
+- **Child Development Project Website (HTML, CSS, JS, JSX, JSON)**  
+  Built with Vite, Node.js + npm.  
   🔗 [View Repository](https://github.com/Naqeeb1124/Child-development-Project-Website)
 
 
