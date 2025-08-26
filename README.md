@@ -32,7 +32,7 @@ This repository collects my key engineering and aerospace projects. Each folder 
 
 - **Child Development Project Website (HTML, CSS, JS, JSX, JSON)**  
   Built with Vite, Node.js + npm.  
-  🔗 [View Repository](https://github.com/Naqeeb1124/Child-development-Project-Website)
+  🔗 [View Repository](https://github.com/Naqeeb1124/Child-development-Project-Website) or [Visit Public Preview](https://naqeeb1124.github.io/Child-development-Project-Website/)
 
 
 
