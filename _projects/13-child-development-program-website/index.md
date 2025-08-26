@@ -1,7 +1,8 @@
+---
+title: "13-child-development-program-website"
+description: "Business plan to empower Egypt's children with life skills through educational workshops and activities. "
+---
 # Empower Kids
-
-## Overview
-Business plan to empower Egypt's children with life skills through educational workshops and activities.
 
 ## Website
 [Click here](https://naqeeb1124.github.io/Child-development-Project-Website/) to visit the website's public preview.
@@ -23,3 +24,5 @@ Empower Kids aims to enhance children's life skills via workshops on communicati
 5. Operational Plan
 6. Financial Projections
 7. Conclusion
+
+

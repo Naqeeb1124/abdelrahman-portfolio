@@ -1,8 +1,8 @@
+---
+title: "01-glider-design"
+description: "Unpowered glider designed using balsawood and clay, applying aerodynamics from SPC201 course. Achieved 20m in test, 34m in open area.  "
+---
 # Glider Design Project
-
-## Overview
-Unpowered glider designed using balsawood and clay, applying aerodynamics from SPC201 course. Achieved 20m in test, 34m in open area.
-
 
 ## Institution
 Zewail City of Science and Technology  
@@ -37,3 +37,5 @@ Applied aerodynamics to balance stability/performance. Demonstrated CFD use in d
 1. VSP Aircraft Analysis User Manual: https://openvsp.org/wiki/lib/exe/fetch.php?media=vsp_aircraft_analysis_user_manual.pdf
 2. Airfoil Tools: http://www.airfoiltools.com/
 3. Aerodynamics of Flight: https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/glider_handbook/gfh_ch03.pdf
+
+

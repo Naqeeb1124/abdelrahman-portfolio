@@ -1,0 +1,5 @@
+theme: minima
+
+collections:
+  projects:
+    output: true

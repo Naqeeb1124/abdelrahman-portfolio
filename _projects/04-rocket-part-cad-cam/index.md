@@ -1,9 +1,8 @@
+---
+title: "04-rocket-part-cad-cam"
+description: "Design and manufacturing processes for P-1003 and P-1004 Rocket Assemblies using external turning, drilling, boring, grooving, threading, and parting off.   "
+---
 # Rocket Part CAD + CAM
-
-## Overview
-Design and manufacturing processes for P-1003 and P-1004 Rocket Assemblies using external turning, drilling, boring, grooving, threading, and parting off.
-
-
 
 ## Institution
 Zewail City of Science and Technology  
@@ -26,3 +25,5 @@ Course: REE 222 - Engineering Production
 
 ## Visuals
 - CAD and CAM photos included for design and machining verification.
+
+

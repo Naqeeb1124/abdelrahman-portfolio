@@ -1,7 +1,8 @@
+---
+title: "08-cold-plate-topopt"
+description: "Progress report for ASME Cold Plate Design Competition focusing on heat transfer, fluid flow, and optimized fin/channel design. "
+---
 # ASME Cold Plate Design Competition
-
-## Overview
-Progress report for ASME Cold Plate Design Competition focusing on heat transfer, fluid flow, and optimized fin/channel design.
 
 ## Institution
 Zewail City for Science and Technology  
@@ -36,3 +37,5 @@ Date: May 20, 2025
    - Fin Design
    - Topology Optimized Design
 9. Conclusion
+
+

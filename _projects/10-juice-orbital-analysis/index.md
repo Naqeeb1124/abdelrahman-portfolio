@@ -1,3 +1,7 @@
+---
+title: "10-juice-orbital-analysis"
+description: "Project description here"
+---
 # Jupiter Icy Moons Explorer Investigation
 
 Abdelrahman Al Naqeeb 202200281  
@@ -43,3 +47,5 @@ This report presents an investigation of the European Space Agency’s JUICE (Ju
   - [4.2 Improvements](#42-improvements)
 - [Conclusions](#conclusions)
 - [References](#references)
+
+

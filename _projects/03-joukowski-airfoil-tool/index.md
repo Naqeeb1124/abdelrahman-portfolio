@@ -1,7 +1,8 @@
+---
+title: "03-joukowski-airfoil-tool"
+description: "Exploration of Joukowsky transform for generating airfoils from circles, including elementary flow functions, conformal mappings, stream functions, and visualizations of transformations and flows. "
+---
 # Joukowsky Airfoils
-
-## Overview
-Exploration of Joukowsky transform for generating airfoils from circles, including elementary flow functions, conformal mappings, stream functions, and visualizations of transformations and flows.
 
 ## Institution
 Zewail City of Science and Technology
@@ -14,3 +15,5 @@ Report on potential flow theory, Laplace's equation, stream functions, Joukowsky
 2. Airfoils & Joukowsky Transform
 3. Program for Visualizing Joukowsky Transform
 4. Flow Visualization over Joukowski Airfoil
+
+

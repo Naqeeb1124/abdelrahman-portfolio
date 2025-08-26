@@ -1,7 +1,8 @@
+---
+title: "07-gearbox-design"
+description: "Design and analysis of a two-stage gear system and shaft design for REE 312, including gear ratio, torque calculations, and Autodesk Inventor analysis. "
+---
 # Two-Stage Gearbox Design
-
-## Overview
-Design and analysis of a two-stage gear system and shaft design for REE 312, including gear ratio, torque calculations, and Autodesk Inventor analysis.
 
 ## Institution
 Zewail City of Science and Technology  
@@ -25,3 +26,5 @@ Date: May 25, 2025
    - Factors of Safety
 3. CAD Drawing
    - Extra Drawing
+
+

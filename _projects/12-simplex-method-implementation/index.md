@@ -1,8 +1,8 @@
+---
+title: "12-simplex-method-implementation"
+description: "Report on simplex method: math background, algorithm, case studies in transportation optimization and production scheduling.  "
+---
 # Implementation and Analysis of the Simplex Method for Linear Programming
-
-## Overview
-Report on simplex method: math background, algorithm, case studies in transportation optimization and production scheduling.
-
 
 ## Institution
 Zewail City for Science and Technology
@@ -23,3 +23,5 @@ Zewail City for Science and Technology
    - Production Scheduling (results)
 5. Conclusion
 6. References
+
+

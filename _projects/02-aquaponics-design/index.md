@@ -1,8 +1,8 @@
+---
+title: "02-aquaponics-design"
+description: "Design of a small-scale aquaponics system integrating aquaculture and hydroponics using fluid mechanics principles.  "
+---
 # Aquaponics System Design
-
-## Overview
-Design of a small-scale aquaponics system integrating aquaculture and hydroponics using fluid mechanics principles.
-
 
 ## Institution
 Zewail City of Science and Technology  
@@ -28,3 +28,5 @@ Affordable ($1900), sustainable food production with year-round yield, reduced e
 2. AIP Conf. Proc. 2197, 020001 (2020)
 3. A. Reyes Yanes, P. Martinez, R. Ahmad, Towards automated aquaponics
 ... (and others as listed)
+
+
