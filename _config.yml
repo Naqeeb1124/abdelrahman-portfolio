@@ -1,4 +1,48 @@
-title: Abdelrahman Portfolio
+title: "Abdelrahman Mohamed — Engineering Portfolio"
+email: "abdelrahman11246@gmail.com"
+description: "A collection of engineering and aerospace projects."
+baseurl: "" # Leave empty for GitHub Pages root
+url: "https://naqeeb1124.github.io" # Replace with your GitHub Pages URL
+
+# Collections
 collections:
   projects:
     output: true
+    permalink: /projects/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: "_projects"
+    values:
+      layout: default
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Plugins (if needed)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files and folders from the build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+# Include specific files or folders
+include:
+  - _projects
+
+
+# GitHub Pages settings
+github:
+  is_project_page: true
