@@ -5,7 +5,7 @@ title: "09-aircraft-pitch-control"
 description: "Final report on designing and analyzing a control system for aircraft pitch motion using classical control techniques and Simulink."
 files:
   - name: "Control Project Report"
-    path: "control_project-3.pdf"
+    path: "09-aircraft-pitch-control/control_project-3.pdf"
   - name: "Closed Loop Analysis Code"
     path: "code/closed_loop_analysis.m"
   - name: "Controller Design Code"
