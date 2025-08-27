@@ -7,7 +7,7 @@ files:
   - name: "Project Report"
     path: "Airfoils_and_Joukowsky_transform.pdf"
   - name: "Python Code"
-    path: "code/joukowsky_airfoil.py"
+    path: "code/joukowski_airfoil.py"
 ---
 # Joukowsky Airfoils
 
