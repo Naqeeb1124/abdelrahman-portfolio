@@ -5,7 +5,7 @@ title: "01-glider-design"
 description: "Unpowered glider designed using balsawood and clay, applying aerodynamics from SPC201 course. Achieved 20m in test, 34m in open area.  "
 files:
   - name: "Project Report"
-    path: "01-glider-design/Glider Design project report team 4.pdf"
+    path: "Glider Design project report team 4.pdf"
 ---
 # Glider Design Project
 
