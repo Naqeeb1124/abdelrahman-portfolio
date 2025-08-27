@@ -23,17 +23,17 @@
       {% if page.files %}
         <h2>Additional Files</h2>
         <ul>
+          {% assign pparts = page.path | split: '/' %}
+          {% assign project_folder = pparts[1] %}
+          {% assign project_base = '/projects/' | append: project_folder | append: '/' %}
           {% for file in page.files %}
             {% assign f = file.path %}
             {% if f contains '://' %}
               <li><a href="{{ f }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
             {% else %}
               {% if f | slice: 0, 1 == '/' %}
-                {# absolute site-root path — let relative_url handle baseurl #}
                 <li><a href="{{ f | relative_url }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
               {% else %}
-                {# project-relative path: use projects/<folder> base (page.title should match folder name) #}
-                {% assign project_base = '/projects/' | append: page.title | append: '/' %}
                 <li>
                   <a href="{{ (project_base | append: f) | relative_url }}" target="_blank" rel="noopener">
                     {{ file.name }}
