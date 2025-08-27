@@ -25,16 +25,9 @@
       <h2>Additional Files</h2>
       <ul>
         {% for file in page.files %}
-          {% assign f = file.path %}
-          {% if f contains '://' %}
-            <li><a href="{{ f }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
-          {% else %}
-            <li>
-              <a href="{{ page.url | append: f | relative_url }}" target="_blank" rel="noopener">
-                {{ file.name }}
-              </a>
-            </li>
-          {% endif %}
+          <li>
+            <a href="{{ file.path }}" target="_blank">{{ file.name }}</a>
+          </li>
         {% endfor %}
       </ul>
     {% endif %}
