@@ -26,20 +26,35 @@
           {% assign pparts = page.path | split: '/' %}
           {% assign project_folder = pparts[1] %}
           {% assign project_base = '/projects/' | append: project_folder | append: '/' %}
+
           {% for file in page.files %}
             {% assign f = file.path %}
             {% if f contains '://' %}
               <li><a href="{{ f }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
             {% else %}
+              {%- comment -%} normalize: remove leading slash and any site.baseurl if present {%- endcomment -%}
               {% if f | slice: 0, 1 == '/' %}
-                <li><a href="{{ f | relative_url }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
+                {% assign cleaned = f | slice: 1, 9999 %}
               {% else %}
-                <li>
-                  <a href="{{ (project_base | append: f) | relative_url }}" target="_blank" rel="noopener">
-                    {{ file.name }}
-                  </a>
-                </li>
+                {% assign cleaned = f %}
               {% endif %}
+              {% if site.baseurl and site.baseurl != '' %}
+                {% assign cleaned = cleaned | replace: site.baseurl | replace: '//','/' %}
+              {% endif %}
+
+              {% comment %}
+                If cleaned already contains "projects/" assume it's an absolute site project path,
+                otherwise build path under /projects/<folder>/
+              {% endcomment %}
+              {% if cleaned contains 'projects/' %}
+                {% assign href = '/' | append: cleaned %}
+              {% else %}
+                {% assign href = project_base | append: cleaned %}
+              {% endif %}
+
+              <li>
+                <a href="{{ href | relative_url }}" target="_blank" rel="noopener">{{ file.name }}</a>
+              </li>
             {% endif %}
           {% endfor %}
         </ul>
