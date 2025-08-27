@@ -1,7 +1,7 @@
 title: "Abdelrahman Mohamed — Engineering Portfolio"
 email: "abdelrahman11246@gmail.com"
 description: "A collection of engineering and aerospace projects."
-baseurl: "" # Leave empty for GitHub Pages root
+baseurl: "/abdelrahman-portfolio"
 url: "https://naqeeb1124.github.io" # Replace with your GitHub Pages URL
 
 # Collections
