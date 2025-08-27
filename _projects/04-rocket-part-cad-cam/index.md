@@ -7,15 +7,15 @@ files:
   - name: "Final Report"
     path: "Final Report (Task 4) (REE 222) (Group 2).pdf"
   - name: "Part 1004 CAD"
-    path: "Rocket parts CAD & CAM/Part1004 CAD.pdf"
+    path: "parts-cad-cam/part1004-cad.pdf"
   - name: "Part 1004 CAD Drawing"
-    path: "Rocket parts CAD & CAM/Part1004 CAD.SLDDRW"
+    path: "parts-cad-cam/part1004-cad.SLDDRW"
   - name: "Part 1003 CAD"
-    path: "Rocket parts CAD & CAM/P1003.PDF"
+    path: "parts-cad-cam/P1003.PDF"
   - name: "Part 1003 STEP File"
-    path: "Rocket parts CAD & CAM/P1003.stp"
+    path: "parts-cad-cam/P1003.stp"
   - name: "Part 1004 CAM File"
-    path: "Rocket parts CAD & CAM/(CAM))group 2 part1004.emcam"
+    path: "parts-cad-cam/cam-part1004.emcam"
 ---
 # Rocket Part CAD + CAM
 
