@@ -19,25 +19,33 @@
 
     <div class="content">
       {{ content }}
-    </div>
 
-    {% if page.files %}
-      <h2>Additional Files</h2>
-      <ul>
-        {% for file in page.files %}
-          {% assign f = file.path %}
-          {% if f contains '://' %}
-            <li><a href="{{ f }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
-          {% else %}
-            <li>
-              <a href="{{ page.url | append: f | relative_url }}" target="_blank" rel="noopener">
-                {{ file.name }}
-              </a>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    {% endif %}
+      {% if page.files %}
+        <h2>Additional Files</h2>
+        <ul>
+          {% for file in page.files %}
+            {% assign f = file.path %}
+            {% if f contains '://' %}
+              <li><a href="{{ f }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
+            {% else %}
+              {% if f | slice: 0, 1 == '/' %}
+                <li><a href="{{ f | relative_url }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
+              {% else %}
+                {% assign base = page.url %}
+                {% if base == nil %}{% assign base = '/' %}{% endif %}
+                {% assign last = base | slice: -1, 1 %}
+                {% if last != '/' %}{% assign base = base | append: '/' %}{% endif %}
+                <li>
+                  <a href="{{ (base | append: f) | relative_url }}" target="_blank" rel="noopener">
+                    {{ file.name }}
+                  </a>
+                </li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
   </main>
 
   <footer>
