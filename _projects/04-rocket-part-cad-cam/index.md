@@ -1,4 +1,6 @@
 ---
+layout: default
+programming_project: false
 title: "04-rocket-part-cad-cam"
 description: "Design and manufacturing processes for P-1003 and P-1004 Rocket Assemblies using external turning, drilling, boring, grooving, threading, and parting off.   "
 ---

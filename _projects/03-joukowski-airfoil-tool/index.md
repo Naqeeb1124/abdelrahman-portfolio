@@ -1,4 +1,6 @@
 ---
+layout: default
+programming_project: false
 title: "03-joukowski-airfoil-tool"
 description: "Exploration of Joukowsky transform for generating airfoils from circles, including elementary flow functions, conformal mappings, stream functions, and visualizations of transformations and flows. "
 ---

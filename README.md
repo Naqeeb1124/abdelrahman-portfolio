@@ -1,8 +1,7 @@
 # Abdelrahman Mohamed — Engineering Portfolio
 
 **Location:** Dubai, UAE / Giza, Egypt  
-**Email:** abdelrahman11246@gmail.com  
-**Phone:** +20 1010 368 288 / +971 50 721 0188
+**Email:** abdelrahman11246@gmail.com    
 
 This repository collects my key engineering and aerospace projects. Each folder contains a short README (summary, tools, results) and selected code/assets. 
 ## Projects

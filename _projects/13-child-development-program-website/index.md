@@ -1,4 +1,6 @@
 ---
+layout: default
+programming_project: true
 title: "13-child-development-program-website"
 description: "Business plan to empower Egypt's children with life skills through educational workshops and activities. "
 ---

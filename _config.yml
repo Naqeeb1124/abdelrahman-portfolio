@@ -1,5 +1,4 @@
-theme: minima
-
+title: Abdelrahman Portfolio
 collections:
   projects:
     output: true

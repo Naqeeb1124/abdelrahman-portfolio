@@ -1,4 +1,6 @@
 ---
+layout: default
+programming_project: false
 title: "07-gearbox-design"
 description: "Design and analysis of a two-stage gear system and shaft design for REE 312, including gear ratio, torque calculations, and Autodesk Inventor analysis. "
 ---

@@ -1,4 +1,6 @@
 ---
+layout: default
+programming_project: false
 title: "02-aquaponics-design"
 description: "Design of a small-scale aquaponics system integrating aquaculture and hydroponics using fluid mechanics principles.  "
 ---

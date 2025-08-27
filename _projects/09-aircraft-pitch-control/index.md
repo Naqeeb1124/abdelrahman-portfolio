@@ -1,4 +1,6 @@
 ---
+layout: default
+programming_project: false
 title: "09-aircraft-pitch-control"
 description: "Final report on designing and analyzing a control system for aircraft pitch motion using classical control techniques and Simulink.  "
 ---

@@ -1,4 +1,6 @@
 ---
+layout: default
+programming_project: false
 title: "10-juice-orbital-analysis"
 description: "Project description here"
 ---
