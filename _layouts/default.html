@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/style.css"> <!-- optional -->
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 </head>
 <body>
   <header>
     <nav>
-      <a href="https://naqeeb1124.github.io/abdelrahman-portfolio">Home</a>
+      <a href="{{ '/' | relative_url }}">Home</a>
     </nav>
   </header>
 
@@ -23,38 +23,13 @@
       {% if page.files %}
         <h2>Additional Files</h2>
         <ul>
-          {% assign pparts = page.path | split: '/' %}
-          {% assign project_folder = pparts[1] %}
+          {% assign project_folder = page.path | split: '/' | slice: 1, 1 | first %}
           {% assign project_base = '/projects/' | append: project_folder | append: '/' %}
-
           {% for file in page.files %}
-            {% assign f = file.path %}
-            {% if f contains '://' %}
-              <li><a href="{{ f }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
+            {% if file.path contains '://' %}
+              <li><a href="{{ file.path }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
             {% else %}
-              {%- comment -%} normalize: remove leading slash and any site.baseurl if present {%- endcomment -%}
-              {% if f | slice: 0, 1 == '/' %}
-                {% assign cleaned = f | slice: 1, 9999 %}
-              {% else %}
-                {% assign cleaned = f %}
-              {% endif %}
-              {% if site.baseurl and site.baseurl != '' %}
-                {% assign cleaned = cleaned | replace: site.baseurl | replace: '//','/' %}
-              {% endif %}
-
-              {% comment %}
-                If cleaned already contains "projects/" assume it's an absolute site project path,
-                otherwise build path under /projects/<folder>/
-              {% endcomment %}
-              {% if cleaned contains 'projects/' %}
-                {% assign href = '/' | append: cleaned %}
-              {% else %}
-                {% assign href = project_base | append: cleaned %}
-              {% endif %}
-
-              <li>
-                <a href="{{ href | relative_url }}" target="_blank" rel="noopener">{{ file.name }}</a>
-              </li>
+              <li><a href="{{ project_base | append: file.path | relative_url }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
             {% endif %}
           {% endfor %}
         </ul>
