@@ -3,6 +3,23 @@ layout: default
 programming_project: false
 title: "09-aircraft-pitch-control"
 description: "Final report on designing and analyzing a control system for aircraft pitch motion using classical control techniques and Simulink.  "
+files:
+  - name: "Control Project Report"
+    path: "control_project-3.pdf"
+  - name: "Closed Loop Analysis Code"
+    path: "code/closed_loop_analysis.m"
+  - name: "Controller Design Code"
+    path: "code/controller_design.m"
+  - name: "Simulink Model Creation Code"
+    path: "code/create_simulink_models.m"
+  - name: "Main Aircraft Pitch Code"
+    path: "code/main_pitch_control.m"
+  - name: "Open Loop Analysis Code"
+    path: "code/open_loop_analysis.m"
+  - name: "PID Tuner Analysis Code"
+    path: "code/pid_tuner_analysis.m"
+  - name: "Complete Analysis Runner"
+    path: "code/run_complete_analysis.m"
 ---
 # Aircraft Pitch System Control
 

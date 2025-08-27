@@ -29,15 +29,19 @@ title: Portfolio
 
 <div class="section">
   <h2>Programming Projects</h2>
-  {% for project in site.projects %}
-    {% if project.programming_project %}
-    <div class="programming-project">
-      <h3>{{ project.title }}</h3>
-      <p>{{ project.description }}</p>
-      <p>🔗 <a href="{{ project.url }}">View Repository</a></p>
-    </div>
-    {% endif %}
-  {% endfor %}
+  <ul>
+    {% for project in site.projects %}
+      {% if project.programming_project %}
+        <li>
+          {% if project.link %}
+            <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+          {% else %}
+            <a href="{{ project.url }}">{{ project.title }}</a>
+          {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </div>
 
 <div class="section">

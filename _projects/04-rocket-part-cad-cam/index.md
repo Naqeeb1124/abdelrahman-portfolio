@@ -3,6 +3,19 @@ layout: default
 programming_project: false
 title: "04-rocket-part-cad-cam"
 description: "Design and manufacturing processes for P-1003 and P-1004 Rocket Assemblies using external turning, drilling, boring, grooving, threading, and parting off.   "
+files:
+  - name: "Final Report"
+    path: "Final Report (Task 4) (REE 222) (Group 2).pdf"
+  - name: "Part 1004 CAD"
+    path: "Rocket parts CAD & CAM/Part1004 CAD.pdf"
+  - name: "Part 1004 CAD Drawing"
+    path: "Rocket parts CAD & CAM/Part1004 CAD.SLDDRW"
+  - name: "Part 1003 CAD"
+    path: "Rocket parts CAD & CAM/P1003.PDF"
+  - name: "Part 1003 STEP File"
+    path: "Rocket parts CAD & CAM/P1003.stp"
+  - name: "Part 1004 CAM File"
+    path: "Rocket parts CAD & CAM/(CAM))group 2 part1004.emcam"
 ---
 # Rocket Part CAD + CAM
 

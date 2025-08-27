@@ -3,6 +3,9 @@ layout: default
 programming_project: false
 title: "08-cold-plate-topopt"
 description: "Progress report for ASME Cold Plate Design Competition focusing on heat transfer, fluid flow, and optimized fin/channel design. "
+files:
+  - name: "Cold Plate Report"
+    path: "cold_plate.pdf"
 ---
 # ASME Cold Plate Design Competition
 

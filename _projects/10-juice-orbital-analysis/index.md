@@ -2,7 +2,16 @@
 layout: default
 programming_project: false
 title: "10-juice-orbital-analysis"
-description: "Project description here"
+description: "Investigation & simulation of JUICE mission spaceship trajectory."
+files:
+  - name: "Mission Analysis Report"
+    path: "202200281 mission analysis.pdf"
+  - name: "Mathematical Analysis"
+    path: "JUICE_Mathematical_Analysis.pdf"
+  - name: "Trajectory Visualization"
+    path: "trajectory visualization.jpg"
+  - name: "Python Code"
+    path: "code/trajectory.py"
 ---
 # Jupiter Icy Moons Explorer Investigation
 

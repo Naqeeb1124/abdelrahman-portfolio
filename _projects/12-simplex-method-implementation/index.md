@@ -3,6 +3,11 @@ layout: default
 programming_project: false
 title: "12-simplex-method-implementation"
 description: "Report on simplex method: math background, algorithm, case studies in transportation optimization and production scheduling.  "
+files:
+  - name: "Numerical Analysis Report"
+    path: "numerical-2.pdf"
+  - name: "MATLAB Code"
+    path: "simplexmethod.m"
 ---
 # Implementation and Analysis of the Simplex Method for Linear Programming
 
