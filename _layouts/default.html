@@ -30,10 +30,8 @@
             <li><a href="{{ f }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
           {% else %}
             {% if f | slice: 0, 1 == '/' %}
-              {# absolute path from site root — relative_url will add baseurl #}
               <li><a href="{{ f | relative_url }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
             {% else %}
-              {# relative to this project's folder (page.url) #}
               {% assign base = page.url %}
               {% if base == nil %}{% assign base = '/' %}{% endif %}
               {% assign last = base | slice: -1, 1 %}
