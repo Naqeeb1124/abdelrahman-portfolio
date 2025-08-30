@@ -16,6 +16,10 @@ defaults:
       path: "_projects"
     values:
       layout: default
+  - scope:
+      path: "_projects/13-child-development-program-website/child-development-website/node_modules"
+    values:
+      published: false
 
 # Markdown settings
 markdown: kramdown
