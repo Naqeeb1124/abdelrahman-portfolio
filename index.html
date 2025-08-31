@@ -16,9 +16,15 @@ title: Portfolio
   <div class="modal-content">
     <span class="close">&times;</span>
     <h2>Contact Request</h2>
-    <form id="contact-form">
-      <label for="whatsapp">WhatsApp Number:</label>
-      <input type="tel" id="whatsapp" name="whatsapp" required>
+    <form id="contact-form" action="https://formspree.io/f/xrbaqwwn" method="POST">
+      <label>Contact method:</label>
+      <div id="contact-options">
+        <input type="radio" id="contact-email" name="contact_method" value="Email" checked> <label for="contact-email">Email</label>
+        <input type="radio" id="contact-whatsapp" name="contact_method" value="WhatsApp"> <label for="contact-whatsapp">WhatsApp</label>
+        <input type="radio" id="contact-telegram" name="contact_method" value="Telegram"> <label for="contact-telegram">Telegram</label>
+      </div>
+      <label id="contact-detail-label" for="contact-detail">Your Email:</label>
+      <input type="text" id="contact-detail" name="contact_detail" required>
       <label for="reason">Brief Reason:</label>
       <textarea id="reason" name="reason" required></textarea>
       <button type="submit">Submit</button>
@@ -154,13 +160,57 @@ title: Portfolio
   #contact-form button:hover {
     background-color: #0056b3;
   }
+
+  /* Styles for category filters */
+  #category-filters {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-color: #e1ecf4;
+    color: #39739d;
+    border: 1px solid #39739d;
+    border-radius: 16px;
+    transition: all 0.2s ease;
+  }
+  .filter-btn:hover {
+    background-color: #c1d9e9;
+  }
+  .filter-btn.active {
+    background-color: #0366d6;
+    color: white;
+    border-color: #0366d6;
+  }
 </style>
 
 <div class="section">
   <h2>Projects</h2>
+
+  {% comment %} ----- Collect and create a unique list of all categories ----- {% endcomment %}
+  {% assign all_categories = "" | split: "," %}
+  {% for p in site.projects %}
+    {% assign all_categories = all_categories | push: p.categories %}
+  {% endfor %}
+  {% assign unique_categories = all_categories | join: ", " | split: ", " | uniq | sort %}
+
+  {% comment %} ----- Category Filter Buttons ----- {% endcomment %}
+  <div id="category-filters">
+    <button class="filter-btn active" data-category="all">All</button>
+    {% for category in unique_categories %}
+      {% if category != "" %}
+        <button class="filter-btn" data-category="{{ category | slugify }}">{{ category }}</button>
+      {% endif %}
+    {% endfor %}
+  </div>
+
   <div class="projects-grid">
     {% for project in site.projects %}
-      <div class="project-card">
+      <div class="project-card" data-categories="{% for cat in project.categories %}{{ cat | slugify }} {% endfor %}">
         <div class="project-title">
           <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
         </div>
@@ -185,36 +235,64 @@ title: Portfolio
 </div>
 
 <script>
-// Get modal
-var modal = document.getElementById("contact-modal");
-// Get button
-var btn = document.getElementById("contact-me-btn");
-// Get close
-var span = document.getElementsByClassName("close")[0];
-// When button clicked, open modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-// When close clicked, close modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-// When click outside, close
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+document.addEventListener("DOMContentLoaded", function() {
+  // Contact Modal Logic
+  const modal = document.getElementById("contact-modal");
+  const btn = document.getElementById("contact-me-btn");
+  const span = document.getElementsByClassName("close")[0];
+
+  if (btn) {
+    btn.onclick = function() { modal.style.display = "block"; }
   }
-}
-// Form submit
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault();
-  var whatsapp = document.getElementById("whatsapp").value;
-  var reason = document.getElementById("reason").value;
-  var subject = "Contact Request from Portfolio";
-  var body = "WhatsApp Number: " + whatsapp + "\n\nReason: " + reason;
-  var mailto = "mailto:abdelrahman11246@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-  window.location.href = mailto;
-  modal.style.display = "none";
+  if (span) {
+    span.onclick = function() { modal.style.display = "none"; }
+  }
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  // Dynamic Contact Form Logic
+  const contactForm = document.getElementById("contact-form");
+  const contactOptions = document.getElementById("contact-options");
+  const contactDetailLabel = document.getElementById("contact-detail-label");
+  const contactDetailInput = document.getElementById("contact-detail");
+
+  if (contactOptions) {
+    contactOptions.addEventListener('change', function(e) {
+      if (e.target.name === 'contact_method') {
+        contactDetailLabel.textContent = `Your ${e.target.value}:`;
+        contactDetailInput.type = e.target.value === 'Email' ? 'email' : 'tel';
+      }
+    });
+  }
+
+  
+
+  // Category Filtering Logic
+  const filters = document.querySelector("#category-filters");
+  if (!filters) return;
+
+  const projectCards = document.querySelectorAll(".project-card");
+
+  filters.addEventListener("click", function(e) {
+    if (e.target.tagName !== "BUTTON") return;
+
+    filters.querySelector(".active").classList.remove("active");
+    e.target.classList.add("active");
+
+    const selectedCategory = e.target.getAttribute("data-category");
+
+    projectCards.forEach(card => {
+      const cardCategories = card.getAttribute("data-categories");
+      if (selectedCategory === "all" || (cardCategories && cardCategories.includes(selectedCategory))) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
 });
 </script>
 
