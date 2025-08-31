@@ -54,15 +54,6 @@ title: Portfolio
   .section {
     margin-bottom: 2rem;
   }
-  .category-section {
-    margin-bottom: 3rem;
-  }
-  .category-title {
-    font-size: 1.8rem;
-    border-bottom: 2px solid #0366d6;
-    padding-bottom: 0.3rem;
-    margin-bottom: 1rem;
-  }
   .project-card {
     background: white;
     border-radius: 8px;
@@ -78,6 +69,25 @@ title: Portfolio
   .project-description {
     color: #555;
     font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1rem;
+  }
+  .project-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .category-tag {
+    background-color: #e1ecf4;
+    color: #39739d;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
   }
   #contact-me-btn {
     padding: 10px;
@@ -147,32 +157,30 @@ title: Portfolio
 </style>
 
 <div class="section">
-  <h2>Projects by Category</h2>
-  {% assign categories = "Aerospace,Mechanical Design,Fluids,Programming,Web Development,Math,CAD/CAM,CFD,Control Systems,Orbital Mechanics,Environmental" | split: "," %}
-  {% for category in categories %}
-    <div class="category-section">
-      <h3 class="category-title">{{ category }}</h3>
-      {% assign projects_in_category = site.projects | where_exp: "item", "item.categories contains category" %}
-      {% if projects_in_category.size > 0 %}
-        {% for project in projects_in_category %}
-          <div class="project-card">
-            <div class="project-title">
-              {% if project.link %}
-                <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
-              {% else %}
-                <a href="{{ project.url }}">{{ project.title }}</a>
-              {% endif %}
-            </div>
-            {% if project.description %}
-              <div class="project-description">{{ project.description }}</div>
-            {% endif %}
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    {% for project in site.projects %}
+      <div class="project-card">
+        <div class="project-title">
+          {% if project.link %}
+            <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+          {% else %}
+            <a href="{{ project.url }}">{{ project.title }}</a>
+          {% endif %}
+        </div>
+        {% if project.description %}
+          <div class="project-description">{{ project.description }}</div>
+        {% endif %}
+        {% if project.categories %}
+          <div class="project-categories">
+            {% for category in project.categories %}
+              <span class="category-tag">{{ category }}</span>
+            {% endfor %}
           </div>
-        {% endfor %}
-      {% else %}
-        <p>No projects in this category.</p>
-      {% endif %}
-    </div>
-  {% endfor %}
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
 </div>
 
 <div class="section">
