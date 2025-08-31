@@ -5,6 +5,11 @@ Thumbs.db
 *.tmp
 *.bak
 
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
 # Python
 __pycache__/
 *.pyc
