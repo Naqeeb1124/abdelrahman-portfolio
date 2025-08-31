@@ -1,7 +1,7 @@
 ---
 layout: default
 categories: [Mechanical Design]
-title: "07-gearbox-design"
+title: "Two-Stage Gearbox Design"
 description: "Design and analysis of a two-stage gear system and shaft design for REE 312, including gear ratio, torque calculations, and Autodesk Inventor analysis. "
 files:
   - name: "Gearbox Assembly STEP File"
@@ -9,8 +9,7 @@ files:
   - name: "Machine Design Report"
     path: "MACHINE_DESIGN (1)[1].pdf"
 ---
-# Two-Stage Gearbox Design
-
+ 
 ## Institution
 Zewail City of Science and Technology  
 Course: REE 312 - Machine Design II    

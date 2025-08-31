@@ -1,15 +1,14 @@
 ---
 layout: default
 categories: [Programming]
-title: "05-cpp-shape-matching-game"
+title: "Shape Hunt Game"
 description: "A shape is displayed and the user has to transform it around the screen to match it to the given required position. Has 30+ features."
 link: https://github.com/Naqeeb1124/FOR-C-PROJECT
 files:
   - name: "Full ZIP file"
     path: "ShapeHuntGame.zip"
 ---
-# Shape Hunt Game
-
+#
 A C++ implementation of the Shape Hunt game using object-oriented programming principles and the CMU Graphics library.
 
 ## Project Structure

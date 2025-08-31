@@ -1,16 +1,14 @@
 ---
 layout: default
 categories: [Programming]
-title: "06-cpp-hospital-ambulance"
+title: "Ambulance Management System"
 description: "A program that simulates the ambulance service operations and calculates relevant statistics to aid in improving the overall ambulance allocation process."
 link: https://github.com/Fatma-Hassaan/Ambulance_management_system
 files:
   - name: "Full code(ZIP)"
     path: "Ambulance-management.zip"
 ---
-
-# Ambulance Management System
-
+ 
 ## Project Description
 This is a complete implementation of the Ambulance Management System as specified in the CIE 205 Data Structures and Algorithms project requirements. The system simulates ambulance service operations across multiple hospitals and calculates relevant statistics.
 

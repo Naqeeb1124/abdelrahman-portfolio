@@ -1,7 +1,7 @@
 ---
 layout: default
 categories: [Programming, Math]
-title: "12-simplex-method-implementation"
+title: "Implementation and Analysis of the Simplex Method for Linear Programming"
 description: "Report on simplex method: math background, algorithm, case studies in transportation optimization and production scheduling.  "
 files:
   - name: "Numerical Analysis Report"
@@ -9,8 +9,7 @@ files:
   - name: "MATLAB Code"
     path: "simplexmethod.m"
 ---
-# Implementation and Analysis of the Simplex Method for Linear Programming
-
+ 
 ## Institution
 Zewail City for Science and Technology
 

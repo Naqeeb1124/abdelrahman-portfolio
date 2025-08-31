@@ -1,14 +1,13 @@
 ---
 layout: default
 categories: [Mechanical Design, Fluids]
-title: "08-cold-plate-topopt"
+title: "ASME Cold Plate Design Competition"
 description: "Progress report for ASME Cold Plate Design Competition focusing on heat transfer, fluid flow, and optimized fin/channel design. "
 files:
   - name: "Cold Plate Report"
     path: "cold_plate.pdf"
 ---
-# ASME Cold Plate Design Competition
-
+ 
 ## Institution
 Zewail City for Science and Technology  
 Supervisors: Dr. Ahmed Elatyar, Eng. Tarek Shaker  

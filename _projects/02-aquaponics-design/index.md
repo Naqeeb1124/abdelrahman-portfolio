@@ -1,14 +1,13 @@
 ---
 layout: default
 categories: [Mechanical Design, Environmental]
-title: "02-aquaponics-design"
+title: "Aquaponics System Design"
 description: "Design of a small-scale aquaponics system integrating aquaculture and hydroponics using fluid mechanics principles.  "
 files:
   - name: "Project Report"
     path: "Aquaponics system design.pdf"
 ---
-# Aquaponics System Design
-
+#
 ## Institution
 Zewail City of Science and Technology  
 Course: ENGR207 - Fluid Mechanics

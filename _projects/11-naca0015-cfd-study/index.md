@@ -1,14 +1,13 @@
 ---
 layout: default
 categories: [Aerospace, Fluids, CFD]
-title: "11-naca0015-cfd-study"
+title: "CFD Analysis of NACA0015 Airfoil"
 description: "CFD simulation and analysis of NACA0015 symmetric airfoil using Ansys, C-grid mesh, and SST model. Compared results to experimental data at various angles of attack and Reynolds numbers. "
 files:
   - name: "Fluid Dynamics Report"
     path: "fluid_II_project (2).pdf"
 ---
-# CFD Analysis of NACA0015 Airfoil
-
+ 
 ## Institution
 Zewail City of Science and Technology  
 Course: SPC 317 - Fluid Mechanics II  

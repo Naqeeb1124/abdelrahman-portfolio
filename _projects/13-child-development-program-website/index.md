@@ -1,12 +1,11 @@
 ---
 layout: default
 categories: [Web Development]
-title: "13-child-development-program-website"
+title: "Empower Kids"
 description: "Business plan and website for a program to empower Egypt's children with life skills through educational workshops and activities."
 link: https://github.com/Naqeeb1124/Child-development-Project-Website
 ---
-# Empower Kids
-
+ 
 ## Website
 [Click here](https://naqeeb1124.github.io/Child-development-Project-Website/) to visit the website's public preview.
 If you wish to run the website locally, download the website from [here](https://drive.google.com/drive/folders/1wxZnbP8C95ChWXClenPZDTa2mPdV7Ph8?usp=drive_link)

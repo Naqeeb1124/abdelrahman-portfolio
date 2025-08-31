@@ -1,7 +1,7 @@
 ---
 layout: default
 categories: [Aerospace, CAD/CAM, Mechanical Design]
-title: "04-rocket-part-cad-cam"
+title: "Rocket Part CAD + CAM"
 description: "Design and manufacturing processes for P-1003 and P-1004 Rocket Assemblies using external turning, drilling, boring, grooving, threading, and parting off.   "
 files:
   - name: "Final Report"
@@ -17,8 +17,7 @@ files:
   - name: "Part 1004 CAM File"
     path: "parts-cad-cam/cam-part1004.emcam"
 ---
-# Rocket Part CAD + CAM
-
+ 
 ## Institution
 Zewail City of Science and Technology  
 Course: REE 222 - Engineering Production

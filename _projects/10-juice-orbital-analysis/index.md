@@ -1,7 +1,7 @@
 ---
 layout: default
 categories: [Aerospace, Orbital Mechanics]
-title: "10-juice-orbital-analysis"
+title: "Jupiter Icy Moons Explorer Investigation"
 description: "Investigation & simulation of JUICE mission spaceship trajectory."
 files:
   - name: "Mission Analysis Report"
@@ -13,8 +13,7 @@ files:
   - name: "Python Code"
     path: "code/trajectory.py"
 ---
-# Jupiter Icy Moons Explorer Investigation
-
+ 
 Abdelrahman Al Naqeeb 202200281  
 March 2025
 

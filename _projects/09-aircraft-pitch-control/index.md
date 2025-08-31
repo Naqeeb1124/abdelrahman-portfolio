@@ -1,7 +1,7 @@
 ---
 layout: default
 categories: [Aerospace, Control Systems]
-title: "09-aircraft-pitch-control"
+title: "Aircraft Pitch System Control"
 description: "Final report on designing and analyzing a control system for aircraft pitch motion using classical control techniques and Simulink."
 files:
   - name: "Control Project Report"
@@ -21,8 +21,7 @@ files:
   - name: "Complete Analysis Runner"
     path: "code/run_complete_analysis.m"
 ---
-# Aircraft Pitch System Control
-
+ 
 ## Institution
 Zewail City for Science and Technology    
 Date: May 16, 2025

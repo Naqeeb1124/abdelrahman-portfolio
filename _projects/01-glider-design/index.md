@@ -1,14 +1,14 @@
 ---
 layout: default
 categories: [Aerospace, Mechanical Design, Fluids]
-title: "01-glider-design"
+title: "Glider Design Project"
 description: "Unpowered glider designed using balsawood and clay, applying aerodynamics from SPC201 course. Achieved 20m in test, 34m in open area.  "
 files:
   - name: "Project Report"
     path: "Glider Design project report team 4.pdf"
 ---
-# Glider Design Project
 
+ 
 ## Institution
 Zewail City of Science and Technology  
 Course: SPC201 - Introduction to Air and Space Flights
