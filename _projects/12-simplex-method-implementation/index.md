@@ -1,6 +1,6 @@
 ---
 layout: default
-programming_project: false
+categories: [Programming, Math]
 title: "12-simplex-method-implementation"
 description: "Report on simplex method: math background, algorithm, case studies in transportation optimization and production scheduling.  "
 files:

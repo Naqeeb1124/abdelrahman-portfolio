@@ -1,6 +1,6 @@
 ---
 layout: default
-programming_project: false
+categories: [Aerospace, Orbital Mechanics]
 title: "10-juice-orbital-analysis"
 description: "Investigation & simulation of JUICE mission spaceship trajectory."
 files:

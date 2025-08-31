@@ -1,6 +1,6 @@
 ---
 layout: default
-programming_project: true
+categories: [Programming]
 title: "06-cpp-hospital-ambulance"
 description: "A program that simulates the ambulance service operations and calculates relevant statistics to aid in improving the overall ambulance allocation process."
 link: https://github.com/Fatma-Hassaan/Ambulance_management_system

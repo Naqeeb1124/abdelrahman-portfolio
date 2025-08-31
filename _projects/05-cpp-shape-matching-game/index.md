@@ -1,6 +1,6 @@
 ---
 layout: default
-programming_project: true
+categories: [Programming]
 title: "05-cpp-shape-matching-game"
 description: "A shape is displayed and the user has to transform it around the screen to match it to the given required position. Has 30+ features."
 link: https://github.com/Naqeeb1124/FOR-C-PROJECT

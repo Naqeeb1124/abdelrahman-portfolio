@@ -1,6 +1,6 @@
 ---
 layout: default
-programming_project: true
+categories: [Web Development]
 title: "13-child-development-program-website"
 description: "Business plan and website for a program to empower Egypt's children with life skills through educational workshops and activities."
 link: https://github.com/Naqeeb1124/Child-development-Project-Website
