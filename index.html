@@ -162,11 +162,7 @@ title: Portfolio
     {% for project in site.projects %}
       <div class="project-card">
         <div class="project-title">
-          {% if project.link %}
-            <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
-          {% else %}
-            <a href="{{ project.url }}">{{ project.title }}</a>
-          {% endif %}
+          <a href="{{ project.url }}">{{ project.title }}</a>
         </div>
         {% if project.description %}
           <div class="project-description">{{ project.description }}</div>
