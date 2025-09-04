@@ -5,9 +5,9 @@ title: "Topology Optimization of a Satellite Bracket"
 description: "This project focuses on the topology optimization of a satellite bracket to minimize mass while satisfying stress and displacement constraints. The analysis is supported by a mathematical analysis document, a Python implementation of the optimization algorithm, and the resulting CAD file."
 files:
   - name: "Mathematical Analysis"
-    path: "Mathematical Analysis and python code/Topology_optimization_of_Satellite_Bracket.pdf"
+    path: "analysis-and-code/Topology_optimization_of_Satellite_Bracket.pdf"
   - name: "Python Code"
-    path: "Mathematical Analysis and python code/topology_optimization.py"
+    path: "analysis-and-code/topology_optimization.py"
   - name: "Bracket CAD file"
     path: "bracket.SLDPRT"
 ---
