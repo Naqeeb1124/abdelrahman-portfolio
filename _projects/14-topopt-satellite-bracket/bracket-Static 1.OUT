@@ -1,0 +1,232 @@
+
+****************************************************************
+****************************************************************
+**                                                            **
+**                                                            **
+**        CCC     OO      SSS    M    M     OO      SSS       **
+**       C       O  O    S       MM  MM    O  O    S          **
+**       C       O  O     SS     M MM M    O  O     SS        **
+**       C       O  O       S    M    M    O  O       S       **
+**        CCC     OO     SSS     M    M     OO     SSS        **
+**                                                            **
+**                                                            **
+**                   Simulations  V2021-B3                    **
+**                 Simulation Premium Package                 **
+**           Distributed By: SOLIDWORKS Corporation           **
+**               6320 Canoga Avenue, Suite 300                **
+**               Woodland Hills, California 91367             **
+**               Telephone Number (818)673-2200               **
+**         Copyright 1988-2018 SOLIDWORKS Corporation         **
+**                                                            **
+****************************************************************
+****************************************************************
+
+Problem name: E:\Downloads II\Satellite bracket\bracke
+Date        : 09/03/2025     Time:   14:26:08
+
+
+ SYSTEM OF UNITS:
+ International System of Units, SI, is used for all input/output data.
+ Common Quantities:
+ Length:meter, Mass:kilogram, Time:second, Temperature:kelvin
+ Force:newton, Pressure also stress:pascal, Energy:joule, Power:watt
+
+ NUMBER OF PHYSICAL CORES USED TO RUN SIMULATION:  8
+
+    -------------------------------------------------------------------------
+    |            M A S S   M O M E N T   I N F O R M A T I O N              |
+    |-----------------------------------------------------------------------|
+    |MASS    0.209705E+01   |VOLUME  0.776684E-03   |WEIGHT  0.205720E+02   |
+    |-----------------------------------------------------------------------|
+    | MASS MOMENT OF INERTIA W.R.T. C.G.                                    |
+    |-----------------------------------------------------------------------|
+    |IX      0.256001E-02   |IY      0.521165E-02   |IZ      0.521191E-02   |
+    |-----------------------------------------------------------------------|
+    | MASS PRODUCT OF INERTIA W.R.T. C.G.                                   |
+    |-----------------------------------------------------------------------|
+    |PXY    -0.506387E-06   |PXZ     0.275332E-06   |PYZ    -0.666043E-03   |
+    |-----------------------------------------------------------------------|
+    | RADII OF GYRATION W.R.T. C.G.                                         |
+    |-----------------------------------------------------------------------|
+    |RX      0.349395E-01   |RY      0.498521E-01   |RZ      0.498534E-01   |
+    |-----------------------------------------------------------------------|
+    | CENTER OF GRAVITY                                                     |
+    |-----------------------------------------------------------------------|
+    |CGx     0.749957E-01   |CGy    -0.155877E-01   |CGz    -0.163821E-01   |
+    |-----------------------------------------------------------------------|
+    | PRINCIPAL MASS MOMENT OF INERTIA                                      |
+    |-----------------------------------------------------------------------|
+    |P1      0.587782E-02   |P2      0.454574E-02   |P3      0.256000E-02   |
+    |-----------------------------------------------------------------------|
+    | PRINCIPAL RADII OF GYRATION                                           |
+    |-----------------------------------------------------------------------|
+    |R1      0.529425E-01   |R2      0.465584E-01   |R3      0.349395E-01   |
+    |-----------------------------------------------------------------------|
+    | PRINCIPAL AXES (DIRECTION COSINES IN ROWS W.R.T C.G)                  |
+    |-----------------------------------------------------------------------|
+    |N_11    0.422377E-02   |N_12   -0.707030E+00   |N_13   -0.707170E+00   |
+    |-----------------------------------------------------------------------|
+    |N_21    0.401444E-02   |N_22    0.707169E+00   |N_23   -0.707033E+00   |
+    |-----------------------------------------------------------------------|
+    |N_31    0.999983E+00   |N_32    0.147454E-03   |N_33    0.582525E-02   |
+    -------------------------------------------------------------------------
+
+    Note: In the above table, WEIGHT is computed based on the user
+          defined acceleration for the first Load Case
+
+
+
+
+  C O N T R O L  I N F O R M A T I O N                  
+
+   CURRENT RESTRAINT SET . . . . . . . . . . . (BC_SET)  =           1
+
+   NUMBER OF LOAD CASES  . . . . . . . . . . . (NLCASE)  =           1
+   SOLUTION MODE . . . . . . . . . . . . . . . (MODEX)   =           0
+      EQ. 0, STATIC ANALYSIS                              
+      EQ. 1, BUCKLING ANALYSIS                            
+      EQ. 2, DYNAMIC ANALYSIS                             
+      EQ. 3, DROP TEST                                    
+
+   SOLVER TYPE . . . . . . . . . . . . . . . . .(ISOL)   =           2
+      EQ. 0, DIRECT SPARSE SOLVER                         
+      EQ. 1, DIRECT SKYLINE SOLVER                        
+      EQ. 2, ITERATIVE SOLVER                             
+      EQ. 3, EXPLICIT INTEGRATION                         
+      EQ. 4, LARGE PROBLEM DIRECT SPARSE SOLVER           
+      EQ. 5, INTEL DIRECT SPARSE SOLVER                   
+      EQ. 6, INTEL NETWORK SPARSE SOLVER                  
+
+   ITERATIVE SOLUTION MODE . . . . . . . . . . (IMODE)   =           2
+      EQ. 1, GENERAL                                      
+      EQ. 2, MEMORY SAVER (FOR TETRA10)                   
+      EQ. 3, ULTRA-MEMORY SAVER (FOR TETRA10)             
+
+   SOLVER CONVERGENCE TOLERANCE  . . . . . . . (CONVR)   =   0.100E-03
+
+   THERMAL LOADING FLAG . . . . . . . . . . . .(ITHERM)  =           0
+      EQ. 0, NO THERMAL EFFECTS CONSIDERED                
+      EQ. 1, ADD TEMPERATURE EFFECT                       
+   GRAVITY LOADING FLAG . . . . . . . . . . . .(IGRAV)   =           1
+      EQ. 0, NO GRAVITY LOADING CONSIDERED                
+      EQ. 1, ADD GRAVITY LOADING EFFECT                   
+   CENTRIFUGAL LOADING FLAG . . . . . . . . . .(ICNTRF)  =           0
+      EQ. 0, NO CENTRIFUGAL LOADING CONSIDERED            
+      EQ. 1, ADD CENTRIFUGAL LOADING EFFECT               
+   IN-PLANE STIFFENING FLAG . . . . . . . . . .(INPLN)   =           0
+      EQ. 0, NO IN-PLANE EFFECTS CONSIDERED               
+      EQ. 1, IN-PLANE EFFECTS CONSIDERED                  
+   SOFT SPRING ADDITION FLAG . . . . . . . . . (ISOFT)   =           0
+      EQ. 0, NO SOFT SPRING OPTION                        
+      EQ. 1, SOFT SPRING ADDED                            
+
+   SAVE DECOMPOSED STIFFNESS MATRIX FLAG . . . (ISAVK)   =           0
+      EQ. 0, DO NOT SAVE DECOMPOSED K                     
+      EQ. 1, SAVE DECOMPOSED K                            
+   FORM STIFFNESS MATRIX FLAG . . . . . . . . .(IFORMK)  =           0
+      EQ. 0, FORM STIFFNESS MATRIX                        
+      EQ. 1, USE EXISTING DECOMPOSED STIFFNESS MATRIX     
+
+   SPIN SOFTENING FLAG . . . . . . . . . . . . (ISPIN)   =           0
+      EQ. 0, NO SPIN SOFTENING EFFECTS CONSIDERED         
+      EQ. 1, SPIN SOFTENING EFFECTS CONSIDERED            
+   INERTIA RELIEF FLAG  . . . . . . . . . . . .(IFORMK)  =           0
+      EQ. 0, NO INERITA RELIEF EFFECTS CONSIDERED         
+      EQ. 1, INERITA RELIEF EFFECTS CONSIDERED            
+   RIGID CONNECTIONS FLAG  . . . . . . . . . . (IRIGID)  =           0
+      EQ. 0, HINGE CONNECTIONS BETWEEN SOLIDS & SHELLS    
+      EQ. 1, RIGID CONNECTIONS BETWEEN SOLIDS & SHELLS    
+
+
+  T O T A L  S Y S T E M  D A T A                        
+   NUMBER OF EQUATIONS . . . . . . . . . . . . . .(NEQ)  =       82770
+   NUMBER OF ELEMENTS. . . . . . . . . . . . . . .(NUME) =       18373
+   NUMBER OF NODAL POINTS. . . . . . . . . . . . .(NUMNP)=       28051
+
+
+
+
+************************************************************************
+    D I S P L A C E M E N T     P R I N T O U T    (LOAD CASE     1)
+************************************************************************
+
+
+
+
+************************************************************************
+    D I S P L A C E M E N T     P R I N T O U T    (LOAD CASE     1)
+************************************************************************
+
+
+  STATUS OF THERMAL EFFECTS FOR THIS LOAD CASE:
+  ---------------------------------------------
+
+    - Thermal flag is off (no thermal effect)
+
+
+
+             D I S P L A C E M E N T S
+
+     NODE X-DISPL.     Y-DISPL.     Z-DISPL.     XX-ROT.      YY-ROT.      ZZ-ROT.
+
+
+ MINIMUM/MAXIMUM DISPLACEMENTS
+
+  NODE       572        12956        23970            0            0            0
+  MIN.  -4.74799E-07 -2.23197E-07 -7.47457E-09   0.0000       0.0000       0.0000    
+
+  NODE       608        17171        17171            0            0            0
+  MAX.   4.74355E-07  1.68636E-06  5.73785E-06   0.0000       0.0000       0.0000    
+
+ MAXIMUM RESULTANT DISPLACEMENT
+
+  NODE     17171
+  MAX.   5.98053E-06
+
+
+
+
+********************************************************************************
+         R E A C T I O N   F O R C E   F O R   LOAD CASE NO.  1
+********************************************************************************
+
+    NODE CSYS    Fx         Fy         Fz         Mx         My         Mz
+
+ FOR REQUESTED                 (Global Cartesian Coord. System)
+    NODES         FX         FY         FZ         MX         MY         MZ
+ Total React. 0.3325E-01 0.1561E+00 -.5020E+04 0.0000E+00 0.0000E+00 0.0000E+00
+  
+
+
+
+********************************************************************************
+ MAXIMUM NODAL VON MISES STRESS & ERROR ESTIMATE FOR LOAD CASE   1
+********************************************************************************
+
+  NODE     25292
+  MAX.     0.10519E+08
+
+
+
+   E R R O R    E S T I M A T I O N
+   (for requested elements)
+
+   Total Strain Energy (TSE)        =  0.707403E-02
+   Total Error Energy (TEE)         =  0.398181E-04
+   Ave. Percentage Error (APE)      =  0.529763E+01
+     ( APE =  sqrt (TEE/(TSE*2. + TEE)) * 100. )
+
+  S O L U T I O N   T I M E   L O G   I N   S E C
+            FOR PROBLEM
+     TIME FOR INPUT PHASE  . . . . . . . . . . . . . . =       0
+     TIME FOR CALCULATION OF STRUCTURE STIFFNESS MATRIX=       0
+     TIME FOR FFEPLUS (PCG ITERATIVE) SOLVER . . . . . =       1
+     TIME FOR AL CONTACT (AND/OR LARGE DISP) OPERATIONS=       0
+     TIME FOR REACTION FORCE & DISP UPDATE TO POST . . =       0
+     TIME FOR STRESS CALCULATION . . . . . . . . . . . =       0
+     TIME FOR LOAD CASE SOLUTIONS  . . . . . . . . . . =       0
+      T O T A L   S O L U T I O N   T I M E  . . . . . =       2
+
+
+
+T O T A L   S O L U T I O N   T I M E (sec) . . . . =       2
