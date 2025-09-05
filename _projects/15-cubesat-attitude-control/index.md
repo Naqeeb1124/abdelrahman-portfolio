@@ -21,10 +21,10 @@ This project develops a complete attitude control simulator for a 3U CubeSat mis
 
 The simulator successfully meets all specified criteria:
 
-✅ **Settling Time:** <20 seconds for 30° slew maneuver  
-✅ **Steady-State Error:** <0.5° accuracy maintained  
-✅ **Wheel Speed Limits:** <6000 RPM operational envelope  
-✅ **Disturbance Rejection:** Effective solar pressure compensation  
+**Settling Time:** <20 seconds for 30° slew maneuver  
+**Steady-State Error:** <0.5° accuracy maintained  
+**Wheel Speed Limits:** <6000 RPM operational envelope  
+**Disturbance Rejection:** Effective solar pressure compensation  
 
 Key results from the 30° slew simulation include a settling time of 15.2 seconds, steady-state error of 0.08°, and maximum wheel speed of 4,250 RPM, all within specifications. The system demonstrates robust performance against environmental disturbances and is suitable for real-time implementation.
 
