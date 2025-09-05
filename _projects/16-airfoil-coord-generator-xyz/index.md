@@ -28,7 +28,7 @@ The backend is built with Python and Flask, and the frontend is a modern web int
 
 ## Public Demo
 
-Click [here](https://airfoil-generator-solidworks.onrender.com/) to access the public website demo. (might have to wait a minute because the website has to be re-deployed if a certain period of inactivity passes).
+Click [here](https://airfoil-generator-solidworks.onrender.com/) to access the public website demo
 
 ## Running the Application
 
