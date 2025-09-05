@@ -11,6 +11,7 @@
     <nav>
       <a href="{{ '/' | relative_url }}">Home</a>
     </nav>
+    <button id="theme-toggle">Toggle Dark Mode</button>
   </header>
 
   <main>
@@ -40,5 +41,30 @@
   <footer>
     <p>&copy; 2025 Abdelrahman Mohammed</p>
   </footer>
+
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    const applyTheme = (theme) => {
+      if (theme === 'dark') {
+        body.classList.add('dark-mode');
+        themeToggle.textContent = 'Toggle Light Mode';
+      } else {
+        body.classList.remove('dark-mode');
+        themeToggle.textContent = 'Toggle Dark Mode';
+      }
+    };
+
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    applyTheme(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', newTheme);
+      applyTheme(newTheme);
+    });
+  </script>
 </body>
 </html>
