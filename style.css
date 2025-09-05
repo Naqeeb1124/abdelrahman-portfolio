@@ -66,6 +66,143 @@ a:hover {
   text-decoration: underline;
 }
 
+.contact {
+  margin-bottom: 2rem;
+}
+.contact p {
+  margin: 0.3rem 0;
+}
+.section {
+  margin-bottom: 2rem;
+}
+.project-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+}
+.project-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+.project-description {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1rem;
+}
+.project-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.category-tag {
+  background-color: #e1ecf4;
+  color: #39739d;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+#contact-me-btn {
+  padding: 10px;
+  background-color: #0366d6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#contact-me-btn:hover {
+  background-color: #0056b3;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+#contact-form label {
+  margin-top: 10px;
+}
+#contact-form input,
+#contact-form textarea {
+  padding: 8px;
+  margin-top: 5px;
+}
+#contact-form button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #0366d6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for category filters */
+#category-filters {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.filter-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #e1ecf4;
+  color: #39739d;
+  border: 1px solid #39739d;
+  border-radius: 16px;
+  transition: all 0.2s ease;
+}
+.filter-btn:hover {
+  background-color: #c1d9e9;
+}
+.filter-btn.active {
+  background-color: #0366d6;
+  color: white;
+  border-color: #0366d6;
+}
+
+
 /* Dark mode styles */
 body.dark-mode {
   background-color: #121212;
@@ -119,4 +256,49 @@ body.dark-mode .project-description {
 body.dark-mode .category-tag {
     background-color: #333;
     color: #e0e0e0;
+}
+
+body.dark-mode .modal-content {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+}
+
+body.dark-mode .filter-btn {
+  background-color: #333;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+body.dark-mode .filter-btn.active {
+  background-color: #bb86fc;
+  color: #121212;
+  border-color: #bb86fc;
+}
+
+body.dark-mode #contact-me-btn {
+    background-color: #bb86fc;
+    color: #121212;
+}
+
+body.dark-mode .close {
+    color: #aaa;
+}
+
+body.dark-mode .close:hover,
+body.dark-mode .close:focus {
+    color: white;
+}
+
+body.dark-mode pre,
+body.dark-mode code {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+}
+
+body.dark-mode pre {
+    padding: 1em;
+    overflow-x: auto;
 }
