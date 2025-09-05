@@ -66,6 +66,21 @@ a:hover {
   text-decoration: underline;
 }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.skill-card {
+  background-color: #e1ecf4;
+  color: #39739d;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
 /* Dark mode styles */
 body.dark-mode {
   background-color: #121212;
@@ -150,4 +165,9 @@ body.dark-mode .close {
 body.dark-mode .close:hover,
 body.dark-mode .close:focus {
     color: white;
+}
+
+body.dark-mode .skill-card {
+  background-color: #333;
+  color: #e0e0e0;
 }
