@@ -26,6 +26,10 @@ The application has two main features:
 
 The backend is built with Python and Flask, and the frontend is a modern web interface.
 
+## Public Demo
+
+Click [here](https://airfoil-generator-solidworks.onrender.com/) to access the public website demo
+
 ## Running the Application
 
 To run the airfoil coordinate generator:
