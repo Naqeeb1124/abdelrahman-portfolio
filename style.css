@@ -120,3 +120,34 @@ body.dark-mode .category-tag {
     background-color: #333;
     color: #e0e0e0;
 }
+
+body.dark-mode .modal-content {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+}
+
+body.dark-mode .filter-btn {
+  background-color: #333;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+body.dark-mode .filter-btn.active {
+  background-color: #bb86fc;
+  color: #121212;
+  border-color: #bb86fc;
+}
+
+body.dark-mode #contact-me-btn {
+    background-color: #bb86fc;
+    color: #121212;
+}
+
+body.dark-mode .close {
+    color: #aaa;
+}
+
+body.dark-mode .close:hover,
+body.dark-mode .close:focus {
+    color: white;
+}
