@@ -44,9 +44,12 @@
 
   <script>
     const themeToggle = document.getElementById('theme-toggle');
+    console.log('themeToggle:', themeToggle);
     const body = document.body;
+    console.log('body:', body);
 
     const applyTheme = (theme) => {
+      console.log('Applying theme:', theme);
       if (theme === 'dark') {
         body.classList.add('dark-mode');
         themeToggle.textContent = 'Toggle Light Mode';
@@ -57,11 +60,15 @@
     };
 
     const savedTheme = localStorage.getItem('theme') || 'light';
+    console.log('savedTheme:', savedTheme);
     applyTheme(savedTheme);
 
     themeToggle.addEventListener('click', () => {
+      console.log('Toggle button clicked');
       const currentTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
+      console.log('currentTheme:', currentTheme);
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      console.log('newTheme:', newTheme);
       localStorage.setItem('theme', newTheme);
       applyTheme(newTheme);
     });

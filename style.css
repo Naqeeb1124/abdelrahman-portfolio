@@ -87,6 +87,10 @@ body.dark-mode a {
   color: #bb86fc;
 }
 
+body.dark-mode nav a {
+  color: #bb86fc;
+}
+
 body.dark-mode footer {
   background-color: #1f1f1f;
   border-top: 1px solid #333;
