@@ -106,3 +106,17 @@ body.dark-mode footer {
     padding: 0.5rem;
     cursor: pointer;
 }
+
+body.dark-mode .project-card {
+  background-color: #1f1f1f;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .project-description {
+  color: #e0e0e0;
+}
+
+body.dark-mode .category-tag {
+    background-color: #333;
+    color: #e0e0e0;
+}
