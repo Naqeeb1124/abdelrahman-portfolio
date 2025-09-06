@@ -17,6 +17,10 @@ defaults:
     values:
       layout: default
   - scope:
+      path: "_projects/16-airfoil-coord-generator-xyz"
+    values:
+      published: false
+  - scope:
       path: "_projects/13-child-development-program-website/child-development-website/node_modules"
     values:
       published: false
@@ -41,6 +45,7 @@ exclude:
   - Gemfile.lock
   - node_modules/
   - vendor/
+  - _projects/16-airfoil-coord-generator-xyz/
 
 # Include specific files or folders
 include:
