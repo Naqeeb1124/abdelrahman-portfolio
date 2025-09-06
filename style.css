@@ -169,25 +169,25 @@ body.dark-mode .close:focus {
 
 /* Dropdown Button (View Skills) */
 .dropdown-btn {
-  padding: 0.75rem 1.5rem; /* Made bigger */
+  padding: 0.6rem 1.2rem; /* A bit bigger */
   font-size: 1rem; /* Adjusted font size */
   cursor: pointer;
-  background-color: #e1ecf4; /* Light mode background */
-  color: #39739d; /* Light mode text color */
-  border: 1px solid #39739d; /* Light mode border */
-  border-radius: 16px;
+  background-color: #e1ecf4; /* Light mode background, consistent with filter-btn */
+  color: #39739d; /* Light mode text color, consistent with filter-btn */
+  border: 1px solid #39739d; /* Light mode border, consistent with filter-btn */
+  border-radius: 16px; /* Consistent with filter-btn */
   transition: all 0.2s ease;
 }
 
 .dropdown-btn:hover {
-  background-color: #c1d9e9; /* Light mode hover background */
+  background-color: #c1d9e9; /* Light mode hover background, consistent with filter-btn */
 }
 
 /* Dropdown Content (Skills List) */
 .dropdown-content {
   display: flex; /* Use flexbox for skill bubbles */
   flex-wrap: wrap; /* Allow bubbles to wrap */
-  gap: 0.5rem; /* Space between bubbles */
+  gap: 0.75rem; /* Space between bubbles - increased for vertical spacing */
   padding: 1rem;
   background-color: #fefefe; /* Light mode background */
   border: 1px solid #ddd;
@@ -197,32 +197,32 @@ body.dark-mode .close:focus {
   margin-top: 0.5rem;
 }
 
-/* Skill Bubbles */
+/* Skill Bubbles - identical to .category-tag */
 .skill-bubble {
-  display: inline-block; /* Make bubbles fit content */
-  background-color: #e1ecf4; /* Light mode background */
-  color: #39739d; /* Light mode text color */
-  padding: 0.25rem 0.5rem;
-  border-radius: 12px;
-  font-size: 0.8rem;
-  font-weight: 500;
+  display: inline-block; /* Make bubbles fit content and display inline */
+  background-color: #e1ecf4; /* Light mode background, identical to category-tag */
+  color: #39739d; /* Light mode text color, identical to category-tag */
+  padding: 0.25rem 0.5rem; /* Identical to category-tag */
+  border-radius: 12px; /* Identical to category-tag */
+  font-size: 0.8rem; /* Identical to category-tag */
+  font-weight: 500; /* Identical to category-tag */
   white-space: nowrap; /* Prevent text from wrapping inside bubble */
 }
 
 /* Dark mode specific styles for dropdown and skills */
 body.dark-mode .dropdown-btn {
-  background-color: #bb86fc;
-  color: #121212;
-  border-color: #bb86fc;
+  background-color: #bb86fc; /* Dark mode background, consistent with filter-btn.active */
+  color: #121212; /* Dark mode text color, consistent with filter-btn.active */
+  border-color: #bb86fc; /* Dark mode border, consistent with filter-btn.active */
 }
 
 body.dark-mode .dropdown-content {
-  background-color: #1f1f1f;
+  background-color: #1f1f1f; /* Dark mode background, consistent with modal-content */
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-  border: 1px solid #333;
+  border: 1px solid #333; /* Dark mode border, consistent with modal-content */
 }
 
 body.dark-mode .skill-bubble {
-  background-color: #333;
-  color: #e0e0e0;
+  background-color: #333; /* Dark mode background, identical to category-tag */
+  color: #e0e0e0; /* Dark mode text color, identical to category-tag */
 }
