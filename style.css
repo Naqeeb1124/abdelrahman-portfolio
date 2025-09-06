@@ -187,7 +187,7 @@ body.dark-mode .close:focus {
 .dropdown-content {
   display: flex; /* Use flexbox for skill bubbles */
   flex-wrap: wrap; /* Allow bubbles to wrap */
-  gap: 0.75rem; /* Space between bubbles - increased for vertical spacing */
+  gap: 0.5rem; /* Space between bubbles - increased for vertical spacing */
   padding: 1rem;
   background-color: #fefefe; /* Light mode background */
   border: 1px solid #ddd;
@@ -207,6 +207,7 @@ body.dark-mode .close:focus {
   font-size: 0.8rem; /* Identical to category-tag */
   font-weight: 500; /* Identical to category-tag */
   white-space: nowrap; /* Prevent text from wrapping inside bubble */
+  margin-bottom: 0.15rem; /* Added for vertical spacing */
 }
 
 /* Dark mode specific styles for dropdown and skills */
