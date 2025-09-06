@@ -1,6 +1,6 @@
 ---
 layout: default
-categories: [Mechanical Design, Environmental]
+categories: [Mechanical Design, Environmental, Fluid Dynamics]
 title: "Aquaponics System Design"
 description: "Design of a small-scale aquaponics system integrating aquaculture and hydroponics using fluid mechanics principles.  "
 files:

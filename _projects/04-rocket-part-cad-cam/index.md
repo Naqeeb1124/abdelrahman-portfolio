@@ -1,6 +1,6 @@
 ---
 layout: default
-categories: [Aerospace, CAD/CAM, Mechanical Design]
+categories: [Aerospace, CAD, CAM, Mechanical Design]
 title: "Rocket Part CAD + CAM"
 description: "Design and manufacturing processes for P-1003 and P-1004 Rocket Assemblies using external turning, drilling, boring, grooving, threading, and parting off.   "
 files:

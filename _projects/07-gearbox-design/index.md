@@ -1,6 +1,6 @@
 ---
 layout: default
-categories: [Mechanical Design]
+categories: [Mechanical Design, CAD]
 title: "Two-Stage Gearbox Design"
 description: "Design and analysis of a two-stage gear system and shaft design for REE 312, including gear ratio, torque calculations, and Autodesk Inventor analysis. "
 files:

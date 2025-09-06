@@ -1,6 +1,6 @@
 ---
 layout: default
-categories: [Aerospace, Mechanical Design, Fluids]
+categories: [Aerospace, Mechanical Design, Aerodynamics]
 title: "Glider Design Project"
 description: "Unpowered glider designed using balsawood and clay, applying aerodynamics from SPC201 course. Achieved 20m in test, 34m in open area.  "
 files:
