@@ -11,6 +11,46 @@ title: Portfolio
   <p><button id="contact-me-btn">Want me to contact you?</button></p>
 </div>
 
+<div class="dropdown">
+  <button id="skills-toggle-btn" class="dropdown-btn">View Skills</button>
+  <div id="skills-dropdown" class="dropdown-content" style="display: none;">
+    <div class="skill-bubble">Linear Algebra</div>
+    <div class="skill-bubble">Ordinary Differential Equations</div>
+    <div class="skill-bubble">Partial Differential Equations</div>
+    <div class="skill-bubble">Complex Analysis</div>
+    <div class="skill-bubble">Probability & Stochastic Processes</div>
+    <div class="skill-bubble">Numerical Analysis</div>
+    <div class="skill-bubble">Topology Optimization</div>
+        <div class="skill-bubble">Aerodynamics</div>
+    <div class="skill-bubble">Propulsion</div>
+    <div class="skill-bubble">Aerospace Structures & Materials</div>
+    <div class="skill-bubble">Flight Dynamics</div>
+    <div class="skill-bubble">Mechanical Design</div>
+    <div class="skill-bubble">Fluids</div>
+    <div class="skill-bubble">CAD/CAM</div>
+    <div class="skill-bubble">Programming</div>
+    <div class="skill-bubble">Control Systems</div>
+    <div class="skill-bubble">Orbital Mechanics</div>
+    <div class="skill-bubble">CFD</div>
+    <div class="skill-bubble">Web Development</div>
+    <div class="skill-bubble">Simulation</div>
+    <div class="skill-bubble">Attitude Determination & Control</div>
+    <div class="skill-bubble">Python</div>
+    <div class="skill-bubble">C++</div>
+    <div class="skill-bubble">MATLAB</div>
+    <div class="skill-bubble">SolidWorks</div>
+    <div class="skill-bubble">Ansys</div>
+    <div class="skill-bubble">Autodesk Inventor</div>
+    <div class="skill-bubble">React.js</div>
+    <div class="skill-bubble">Vite</div>
+    <div class="skill-bubble">Flask</div>
+    <div class="skill-bubble">HTML/CSS</div>
+    <div class="skill-bubble">JavaScript</div>
+    <div class="skill-bubble">Git</div>
+    <div class="skill-bubble">Jekyll</div>
+  </div>
+</div>
+
 <!-- Modal -->
 <div id="contact-modal" class="modal">
   <div class="modal-content">
@@ -34,42 +74,7 @@ title: Portfolio
 
 <p>This site collects my key engineering and aerospace projects. Each folder/repository contains a summary, tools used, results, and selected code or assets. Click <a href="https://github.com/Naqeeb1124/abdelrahman-portfolio" target="_blank">here</a> for my GitHub page.</p>
 
-<div class="section">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-card">Aerospace</div>
-    <div class="skill-card">Mechanical Design</div>
-    <div class="skill-card">Fluids</div>
-        <div class="skill-card">Linear Algebra</div>
-    <div class="skill-card">Ordinary Differential Equations</div>
-    <div class="skill-card">Partial Differential Equations</div>
-    <div class="skill-card">Complex Analysis</div>
-    <div class="skill-card">Probability & Stochastic Processes</div>
-    <div class="skill-card">Numerical Analysis</div>
-    <div class="skill-card">Topology Optimization</div>
-    <div class="skill-card">CAD/CAM</div>
-    <div class="skill-card">Programming</div>
-    <div class="skill-card">Control Systems</div>
-    <div class="skill-card">Orbital Mechanics</div>
-    <div class="skill-card">CFD</div>
-    <div class="skill-card">Web Development</div>
-    <div class="skill-card">Simulation</div>
-    <div class="skill-card">Attitude Determination & Control</div>
-    <div class="skill-card">Python</div>
-    <div class="skill-card">C++</div>
-    <div class="skill-card">MATLAB</div>
-    <div class="skill-card">SolidWorks</div>
-    <div class="skill-card">Ansys</div>
-    <div class="skill-card">Autodesk Inventor</div>
-    <div class="skill-card">React.js</div>
-    <div class="skill-card">Vite</div>
-    <div class="skill-card">Flask</div>
-    <div class="skill-card">HTML/CSS</div>
-    <div class="skill-card">JavaScript</div>
-    <div class="skill-card">Git</div>
-    <div class="skill-card">Jekyll</div>
-  </div>
-</div>
+
 
 <style>
   body {
@@ -305,7 +310,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  
+  // Skills Dropdown Logic
+  const skillsToggleBtn = document.getElementById("skills-toggle-btn");
+  const skillsDropdown = document.getElementById("skills-dropdown");
+
+  if (skillsToggleBtn) {
+    skillsToggleBtn.onclick = function() {
+      if (skillsDropdown.style.display === "block") {
+        skillsDropdown.style.display = "none";
+      } else {
+        skillsDropdown.style.display = "block";
+      }
+    }
+  }
 
   // Category Filtering Logic
   const filters = document.querySelector("#category-filters");
