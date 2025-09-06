@@ -1,6 +1,6 @@
 ---
 layout: default
-categories: [Aerospace, Control Systems, Simulation, Attitude Determination & Control]
+categories: [Aerospace, Control Systems, Simulation, Attitude Determination & Control, Python]
 title: "Advanced 3U CubeSat Attitude Control System"
 description: "This project presents a comprehensive attitude determination and control system (ADCS) for a 3U CubeSat, integrating rigid body dynamics, sensor simulation, Extended Kalman Filter (EKF) state estimation, and PID control with reaction wheel actuation. The simulator validates performance against stringent requirements."
 files:
