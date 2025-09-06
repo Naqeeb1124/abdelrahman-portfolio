@@ -1,6 +1,6 @@
 ---
 layout: default
-categories: [Aerospace, Orbital Mechanics, Python]
+categories: [Aerospace, Orbital Mechanics, Python, Math]
 title: "Jupiter Icy Moons Explorer Investigation"
 description: "Investigation & simulation of JUICE mission spaceship trajectory."
 files:
