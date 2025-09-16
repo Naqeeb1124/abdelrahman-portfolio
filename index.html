@@ -355,6 +355,13 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   });
+
+  // Check for hash and open modal
+  if (window.location.hash === '#contact-me-btn') {
+    if (btn) {
+      btn.click();
+    }
+  }
 });
 </script>
 
