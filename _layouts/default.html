@@ -18,6 +18,14 @@
     <h1>{{ page.title }}</h1>
     <p>{{ page.description }}</p>
 
+    {% if page.image %}
+      {% assign project_folder = page.path | split: '/' | slice: 1, 1 | first %}
+      {% assign project_base = '/projects/' | append: project_folder | append: '/' %}
+      <div class="project-image" style="margin-bottom: 20px;">
+        <img src="{{ project_base | append: page.image | relative_url }}" alt="{{ page.title }}" style="max-width: 100%; height: auto; border-radius: 8px;">
+      </div>
+    {% endif %}
+
     <div class="content">
       {{ content }}
 
