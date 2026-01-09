@@ -22,10 +22,24 @@
       {{ content }}
 
       {% if page.files %}
+        {% assign project_folder = page.path | split: '/' | slice: 1, 1 | first %}
+        {% assign project_base = '/projects/' | append: project_folder | append: '/' %}
+
+        {% for file in page.files %}
+          {% assign ext = file.path | split: '.' | last | downcase %}
+          {% if ext == 'mp4' or ext == 'webm' or ext == 'ogg' %}
+            <h3>{{ file.name }}</h3>
+            <div class="video-container" style="margin-bottom: 20px;">
+              <video width="100%" controls>
+                <source src="{{ project_base | append: file.path | relative_url }}" type="video/{{ ext }}">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          {% endif %}
+        {% endfor %}
+
         <h2>Additional Files</h2>
         <ul>
-          {% assign project_folder = page.path | split: '/' | slice: 1, 1 | first %}
-          {% assign project_base = '/projects/' | append: project_folder | append: '/' %}
           {% for file in page.files %}
             {% if file.path contains '://' %}
               <li><a href="{{ file.path }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
