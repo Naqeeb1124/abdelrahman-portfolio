@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Active Suspension Design"
+image: "image.png"
 description: "Design and analysis of an active suspension system for a quarter car model using MATLAB and Python."
 categories: [Control Systems, MATLAB, Python]
 files:

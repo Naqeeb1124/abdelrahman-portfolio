@@ -7,7 +7,7 @@ title: Abdelrahman Mohamed — Student Portfolio
 <div id="contact" class="contact">
   <p><strong>Location:</strong> Dubai, UAE / Giza, Egypt</p>
   <p><strong>Email:</strong> <a href="mailto:abdelrahman11246@gmail.com">abdelrahman11246@gmail.com</a></p>
-  <p><button id="contact-me-btn">Want me to contact you?</button></p>
+  <p><button id="contact-me-btn">Contact</button></p>
 </div>
 
 <div class="dropdown">
@@ -272,6 +272,13 @@ title: Abdelrahman Mohamed — Student Portfolio
 
       {% if is_priority %}
         <div class="project-card" data-categories="{% for cat in project.categories %}{{ cat | slugify }} {% endfor %}">
+          {% if project.image %}
+            {% assign project_folder = project.path | split: '/' | slice: 1, 1 | first %}
+            {% assign project_base = '/projects/' | append: project_folder | append: '/' %}
+            <div class="project-card-image" style="margin-bottom: 1rem;">
+               <img src="{{ project_base | append: project.image | relative_url }}" alt="{{ project.title }}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;">
+            </div>
+          {% endif %}
           <div class="project-title">
             <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
           </div>
@@ -302,6 +309,13 @@ title: Abdelrahman Mohamed — Student Portfolio
 
       {% unless is_priority %}
         <div class="project-card" data-categories="{% for cat in project.categories %}{{ cat | slugify }} {% endfor %}">
+          {% if project.image %}
+            {% assign project_folder = project.path | split: '/' | slice: 1, 1 | first %}
+            {% assign project_base = '/projects/' | append: project_folder | append: '/' %}
+            <div class="project-card-image" style="margin-bottom: 1rem;">
+               <img src="{{ project_base | append: project.image | relative_url }}" alt="{{ project.title }}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px;">
+            </div>
+          {% endif %}
           <div class="project-title">
             <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
           </div>
