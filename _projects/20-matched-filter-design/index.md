@@ -25,4 +25,4 @@ This project involves the design and implementation of a matched filter to maxim
 - **Report:** Detailed derivation and analysis of the matched filter and probability of error.
 - **Code/Model:** MATLAB scripts and Simulink models used for the simulation.
 
-![Simulation Result](simu-prob.png)
+
