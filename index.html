@@ -258,23 +258,65 @@ title: Abdelrahman Mohamed — Student Portfolio
     {% endfor %}
   </div>
 
+  {% assign priority_categories = "Aerospace,Aerodynamics,Flight Dynamics,Orbital Mechanics,CFD,Gas Dynamics,Propulsion,Mechanical Design" | split: "," %}
+  
+  <h3>Aerospace & Engineering Projects</h3>
   <div class="projects-grid">
     {% for project in site.projects %}
-      <div class="project-card" data-categories="{% for cat in project.categories %}{{ cat | slugify }} {% endfor %}">
-        <div class="project-title">
-          <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
-        </div>
-        {% if project.description %}
-          <div class="project-description">{{ project.description }}</div>
+      {% assign is_priority = false %}
+      {% for cat in project.categories %}
+        {% if priority_categories contains cat %}
+          {% assign is_priority = true %}
         {% endif %}
-        {% if project.categories %}
-          <div class="project-categories">
-            {% for category in project.categories %}
-              <span class="category-tag">{{ category }}</span>
-            {% endfor %}
+      {% endfor %}
+
+      {% if is_priority %}
+        <div class="project-card" data-categories="{% for cat in project.categories %}{{ cat | slugify }} {% endfor %}">
+          <div class="project-title">
+            <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
           </div>
+          {% if project.description %}
+            <div class="project-description">{{ project.description }}</div>
+          {% endif %}
+          {% if project.categories %}
+            <div class="project-categories">
+              {% for category in project.categories %}
+                <span class="category-tag">{{ category }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <h3>Other Projects</h3>
+  <div class="projects-grid">
+    {% for project in site.projects %}
+      {% assign is_priority = false %}
+      {% for cat in project.categories %}
+        {% if priority_categories contains cat %}
+          {% assign is_priority = true %}
         {% endif %}
-      </div>
+      {% endfor %}
+
+      {% unless is_priority %}
+        <div class="project-card" data-categories="{% for cat in project.categories %}{{ cat | slugify }} {% endfor %}">
+          <div class="project-title">
+            <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
+          </div>
+          {% if project.description %}
+            <div class="project-description">{{ project.description }}</div>
+          {% endif %}
+          {% if project.categories %}
+            <div class="project-categories">
+              {% for category in project.categories %}
+                <span class="category-tag">{{ category }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      {% endunless %}
     {% endfor %}
   </div>
 </div>
