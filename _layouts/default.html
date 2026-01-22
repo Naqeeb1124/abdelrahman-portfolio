@@ -58,13 +58,16 @@
         </ul>
       {% endif %}
     </div>
-  </main>
+  </main> 
 
   <footer>
-    <p>&copy; 2025 Abdelrahman Mohammed</p>
+    <p>&copy; <span id="current-year"></span> Abdelrahman Mohammed</p>
   </footer>
 
   <script>
+    // Set the current year dynamically
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
 
