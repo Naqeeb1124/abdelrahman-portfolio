@@ -2,6 +2,7 @@
 layout: default
 categories: [Aerospace, Control Systems, Simulation]
 title: "CubeSat ADCS Design"
+image: "image.png"
 description: "Programmatic development of a 1U CubeSat Attitude Control System (ADCS) using MATLAB/Simulink API. Features a B-Dot detumbling controller and Nadir-pointing GNC loops."
 files:
   - name: "Technical Report"
