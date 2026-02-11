@@ -1,48 +1,41 @@
 ---
 layout: default
-categories: [Aerospace, Control Systems, Simulation, Attitude Determination & Control, Python]
-title: "Advanced 3U CubeSat Attitude Control System"
-description: "This project presents a comprehensive attitude determination and control system (ADCS) for a 3U CubeSat, integrating rigid body dynamics, sensor simulation, Extended Kalman Filter (EKF) state estimation, and PID control with reaction wheel actuation. The simulator validates performance against stringent requirements."
+categories: [Aerospace, Control Systems, Simulation]
+title: "CubeSat ADCS Design"
+description: "Programmatic development of a 1U CubeSat Attitude Control System (ADCS) using MATLAB/Simulink API. Features a B-Dot detumbling controller and Nadir-pointing GNC loops."
 files:
-  - name: "Full Report PDF"
-    path: "cubesat_attitude_control.pdf"
-  - name: "Source Code (ZIP)"
-    path: "src/source-code-controlsystem.zip"
+  - name: "Technical Report"
+    path: "CubeSat_ADCS_Report.pdf"
+  - name: "Nadir Pointing Model"
+    path: "CubeSat_ADCS_Nadir.slx"
+  - name: "RWA Simple Model"
+    path: "CubeSat_RWA_Simple.slx"
+  - name: "Initialization Script"
+    path: "init_sim.m"
+  - name: "3D Visualization Script"
+    path: "visualize_cubesat.m"
 ---
 
-## Project Overview
+## Overview
+This project involves the end-to-end development of an Attitude Control System (ADCS) for a 1U CubeSat. The simulation architecture was constructed programmatically using the MATLAB/Simulink API, allowing for rapid parameter iteration and a "Digital Twin" approach to GNC (Guidance, Navigation, and Control) development.
 
-This project develops a complete attitude control simulator for a 3U CubeSat mission, emphasizing mathematical rigor and practical implementation. The system includes:
+## Key Features
+- **Programmatic Model Generation:** Built entirely through code, resolving critical API dimension errors and ensuring a robust simulation framework.
+- **B-Dot Controller:** Implemented for satellite detumbling, successfully dissipating kinetic energy to bring the spacecraft into a stable state relative to the magnetic field.
+- **Nadir-Pointing Control:** A quaternion-based PD controller that pitches the satellite to track the Earth (Nadir) during its orbit.
+- **Actuator Modeling:** Includes detailed models for Reaction Wheel Assemblies (RWA) and Magnetorquers.
+- **3D Visualization:** A custom MATLAB script for real-time animation of the CubeSat's attitude and orbital position.
 
-* **Dynamics Modeling:** Nonlinear rigid body dynamics with reaction wheel coupling and environmental disturbances.
-* **Sensor Simulation:** High-fidelity models for rate gyroscopes and coarse sun sensors, including noise and bias.
-* **State Estimation:** Extended Kalman Filter for joint attitude and gyroscope bias estimation.
-* **Control Design:** PID controller with quaternion error handling and anti-windup protection.
+## Technical Details
+- **Satellite Type:** 1U CubeSat (1.33 kg, 10x10x10 cm).
+- **Control Laws:** B-Dot for detumbling and Quaternion PD for pointing.
+- **Environment:** Low Earth Orbit (LEO) magnetic field modeling.
+- **Solver:** Fixed-step Runge-Kutta (ode4) with 0.1s sampling time.
 
-The simulator successfully meets all specified criteria:
+## Results
+The simulation confirms that the detumbling phase is completed within approximately 1.5 orbits (90 minutes). The Nadir-pointing controller achieves stable tracking with minimal error, as verified by the 3D attitude reconstruction.
 
-**Settling Time:** <20 seconds for 30° slew maneuver  
-**Steady-State Error:** <0.5° accuracy maintained  
-**Wheel Speed Limits:** <6000 RPM operational envelope  
-**Disturbance Rejection:** Effective solar pressure compensation  
-
-Key results from the 30° slew simulation include a settling time of 15.2 seconds, steady-state error of 0.08°, and maximum wheel speed of 4,250 RPM, all within specifications. The system demonstrates robust performance against environmental disturbances and is suitable for real-time implementation.
-
-## Running the Code
-
-To run the CubeSat Attitude Control System code:
-
-1.  **Extract the ZIP file:** Unzip `source-code-controlsystem.zip` to a directory of your choice.
-2.  **Install dependencies:** The code is written in Python and uses `numpy` and `scipy`. You can install them using pip:
-    ```bash
-    pip install numpy scipy
-    ```
-3.  **Execute the PID Controller Test:** The `control_pid.py` file contains a test function that demonstrates the PID controller and its interaction with the dynamics model. Navigate to the `src` directory (where you unzipped the files) in your terminal and run:
-    ```bash
-    python control_pid.py
-    ```
-    This will execute `test_pid_controller()` and print various control and performance metrics.
-
-4.  **Explore other modules:** Each Python file (`dynamics.py`, `ekf.py`, `quaternion_utils.py`, `sensors.py`) also contains a `if __name__ == "__main__":` block that runs its own set of tests. You can execute them similarly (e.g., `python dynamics.py`) to understand individual components.
-
-5.  **Building a full simulation:** For a complete simulation, you would typically integrate these modules. The `analyze_step_response` function within `control_pid.py` provides an example of how the controller interacts with the dynamics. You can adapt this function or create a new script to build a custom simulation.
+## How to Run
+1. Run `init_sim.m` to load parameters into the workspace.
+2. Open and run `CubeSat_ADCS_Nadir.slx` or `CubeSat_RWA_Simple.slx`.
+3. After simulation, run `visualize_cubesat.m` to view the 3D animation.
