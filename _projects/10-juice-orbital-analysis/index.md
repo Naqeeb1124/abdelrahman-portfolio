@@ -2,7 +2,7 @@
 layout: default
 categories: [Aerospace, Orbital Mechanics, MATLAB, Math]
 title: "Jupiter Icy Moons Explorer Investigation"
-description: "Investigation & simulation of JUICE mission spaceship trajectory."
+description: "Project description here"
 image: "image.png"
 files:
   - name: "Mission Analysis Report"

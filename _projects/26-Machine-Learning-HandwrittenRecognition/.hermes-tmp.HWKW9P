@@ -1,0 +1,22 @@
+--- 
+layout: default
+categories: [Machine Learning, Computer Vision]
+title: Handwritten Digit Classification
+image: digit-classifier.png
+---
+
+## Overview
+Implements a handwritten digit classification system using a Random Forest classifier on the classic MNIST-like dataset. Includes preprocessing, model training, and evaluation with confusion matrix visualisation.
+
+## Features
+• 🖼️ Image loading and flattening
+• 📊 Random Forest classifier
+• 📈 Confusion matrix and accuracy metrics
+• 📦 Simple requirements file (numpy, scikit-learn, matplotlib)
+
+## How to Run
+```bash
+cd 26-Machine-Learning-HandwrittenRecognition
+pip install -r requirements.txt
+python CodeAlpha_HandwrittenRecognition.py
+```

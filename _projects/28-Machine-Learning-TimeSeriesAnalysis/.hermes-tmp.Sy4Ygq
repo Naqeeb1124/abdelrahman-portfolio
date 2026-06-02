@@ -1,0 +1,23 @@
+---
+layout: default
+categories: [Machine Learning, Time Series]
+title: Stock Price Time Series Analysis
+image: timeseries-plot.png
+---
+
+## Overview
+Performs time‑series analysis on Apple stock price data. Includes data acquisition via `yfinance`, rolling‑mean trend analysis, seasonal decomposition, and optional Prophet forecasting.
+
+## Features
+- 📈 Data download with `yfinance`
+- 📊 30‑day rolling mean trend
+- 🌦️ Seasonal decomposition using `statsmodels`
+- 🔮 Optional forecasting with Facebook Prophet (if installed)
+- 📂 Generated plots: `price_plot.png`, `trend_plot.png`, `seasonality_decompose.png`, `forecast.png`
+
+## How to Run
+```bash
+cd 28-Machine-Learning-TimeSeriesAnalysis
+pip install -r requirements.txt
+python analysis.py
+```

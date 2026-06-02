@@ -2,7 +2,7 @@
 layout: default
 categories: [Aerodynamics, CFD, MATLAB, Ansys]
 title: "Joukowsky Airfoil Analysis"
-description: "Generation and analysis of Joukowsky airfoils, combining MATLAB for coordinate generation and Ansys for flow simulation."
+description: "This project explores the characteristics of Joukowsky airfoils. It involves generating airfoil coordinates using conformal mapping techniques in MATLAB and performing Computational Fluid Dynamics (CFD) analysis using Ansys. "
 image: "pathlines.jpeg"
 files:
   - name: "Airfoil Analysis Code"
@@ -14,9 +14,6 @@ files:
   - name: "Ansys Project File"
     path: "sim2jouk.wbpj"
 ---
-
-## Overview
-This project explores the characteristics of Joukowsky airfoils. It involves generating airfoil coordinates using conformal mapping techniques in MATLAB and performing Computational Fluid Dynamics (CFD) analysis using Ansys.
 
 ## Key Features
 - **Coordinate Generation:** MATLAB scripts to transform a cylinder into a Joukowsky airfoil.

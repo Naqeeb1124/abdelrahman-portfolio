@@ -1,0 +1,22 @@
+--- 
+layout: default
+categories: [Machine Learning, Healthcare]
+title: Breast Cancer Disease Prediction
+image: cancer-prediction.png
+---
+
+## Overview
+Machine learning pipeline for breast cancer classification using the Scikit‑learn Breast Cancer dataset. Features robust data scaling and a Random Forest classifier with detailed evaluation metrics.
+
+## Features
+• 🤷‍♀️ Data scaling with StandardScaler
+• 📝 Random Forest classification
+• 📈 Accuracy, ROC‑AUC, and classification report
+• 🌟 ROC curve visualisation (roc_curve.png)
+
+## How to Run
+```bash
+cd 27-Machine-Learning-DiseasePrediction
+pip install -r requirements.txt
+python CodeAlpha_DiseasePrediction.py
+```

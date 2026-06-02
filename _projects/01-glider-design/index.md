@@ -3,7 +3,7 @@ layout: default
 categories: [Aerospace, Mechanical Design, Aerodynamics]
 title: "Glider Design Project"
 image: "image.png"
-description: "Unpowered glider designed using balsawood and clay, applying aerodynamics from SPC201 course. Achieved 20m in test, 34m in open area.  "
+description: "Project description here"
 files:
   - name: "Project Report"
     path: "Glider Design project report team 4.pdf"

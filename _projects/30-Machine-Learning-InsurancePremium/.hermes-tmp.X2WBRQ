@@ -1,0 +1,28 @@
+---
+layout: default
+categories: [Machine Learning, Healthcare, Risk Analysis]
+title: Medical Insurance Premium Prediction
+image: insurance-dashboard.png
+---
+
+## Overview
+End‑to‑end system that predicts individual medical insurance premiums using a Random Forest regressor. Includes data preprocessing, model benchmarking, and a Streamlit dashboard for interactive premium calculation and cost‑driver analysis.
+
+## Key Insights
+- 🚬 Smoking accounts for ~49% of premium determination (≈$15k surcharge)
+- 📊 BMI >30 adds a tiered surcharge, up to $35k–$50k for obese smokers
+- 🎂 Age adds $250‑$300 per year after 25
+
+## Features
+- 💻 Robust preprocessing pipeline (`src/data_preprocessing.py`)
+- 📊 Model benchmarking (Linear, Random Forest, Gradient Boosting) with R² ≈ 89.9%
+- 📈 Interactive Streamlit UI (`app.py`) with premium calculator, cost‑driver waterfalls, and EDA visualisations
+- 💾 Model persistence (`models/best_model.pkl`)
+
+## How to Run Locally
+```bash
+cd 30-Machine-Learning-InsurancePremium
+pip install -r requirements.txt
+python src/train.py   # trains and saves the best model
+streamlit run app.py   # launches the dashboard
+```

@@ -2,7 +2,7 @@
 layout: default
 categories: [Web Development, Programming]
 title: "Empower Kids"
-description: "Business plan and website for a program to empower Egypt's children with life skills through educational workshops and activities."
+description: "Project description here"
 link: https://github.com/Naqeeb1124/Child-development-Project-Website
 ---
  

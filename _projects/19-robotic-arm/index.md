@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Robotic Arm Design & Control"
-description: "Design, simulation, and control of a robotic arm using SolidWorks, MATLAB, and Arduino."
+description: "Project description here"
 categories: [Mechatronics, Robotics, Control Systems, CAD]
 image: "robitic-arm.png"
 files:

@@ -3,7 +3,7 @@ layout: default
 categories: [Aerospace, Control Systems]
 title: "Aircraft Pitch System Control"
 image: "image.png"
-description: "Final report on designing and analyzing a control system for aircraft pitch motion using classical control techniques and Simulink."
+description: "Project description here"
 files:
   - name: "Control Project Report"
     path: "control_project-3.pdf"

@@ -3,7 +3,7 @@ layout: default
 categories: [Aerospace, Aerodynamics, CFD]
 title: "CFD Analysis of NACA0015 Airfoil"
 image: "image.png"
-description: "CFD simulation and analysis of NACA0015 symmetric airfoil using Ansys, C-grid mesh, and SST model. Compared results to experimental data at various angles of attack and Reynolds numbers. "
+description: "Project description here"
 files:
   - name: "Fluid Dynamics Report"
     path: "fluid_II_project (2).pdf"

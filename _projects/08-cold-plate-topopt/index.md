@@ -3,7 +3,7 @@ layout: default
 categories: [Mechanical Design, Fluid Dynamics, Topology Optimization]
 title: "ASME Cold Plate Design Competition"
 image: "image.png"
-description: "Progress report for ASME Cold Plate Design Competition focusing on heat transfer, fluid flow, and optimized fin/channel design. "
+description: "Project description here"
 files:
   - name: "Cold Plate Report"
     path: "cold_plate.pdf"

@@ -1,0 +1,27 @@
+---
+layout: default
+categories: [Machine Learning, Real Estate]
+title: House Price Prediction Model
+image: house-price.png
+---
+
+## Overview
+End‑to‑end regression pipeline to predict house prices using the Kaggle House Prices dataset. Compares Linear Regression and Random Forest models, selecting the best performer (Random Forest) based on RMSE and R².
+
+## Features
+- 💻 Data loading and cleaning (missing value imputation, one‑hot encoding)
+- 📈 Feature scaling with `StandardScaler`
+- 🤌 Model comparison: Linear Regression vs Random Forest
+- 🎩 Visualisations: feature importance, actual vs predicted plots, model comparison table
+- 💻 Ready-to‑use Jupyter notebook (`house_price_prediction.ipynb`)
+
+## How to Run
+```bash
+cd 29-Machine-Learning-HousePrice
+pip install -r requirements.txt
+python train_model.py
+```
+Or launch the notebook:
+```bash
+jupyter notebook house_price_prediction.ipynb
+```

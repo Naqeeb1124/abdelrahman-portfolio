@@ -2,7 +2,7 @@
 layout: default
 categories: [Web Development, Aerospace, CAD, Python, Programming]
 title: "Web-Based Airfoil Coordinate Generator"
-description: "A web application that generates and converts NACA airfoil coordinates for CAD applications. Users can generate coordinates for any 4-digit NACA airfoil or convert existing coordinate files into a SolidWorks-compatible format."
+description: "Project description here"
 files:
   - name: "Full source code (ZIP)"
     path: "full-source-code.zip"

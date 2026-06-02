@@ -3,7 +3,7 @@ layout: default
 categories: [Aerospace, Control Systems, Simulation]
 title: "CubeSat ADCS Design"
 image: "image.png"
-description: "Programmatic development of a 1U CubeSat Attitude Control System (ADCS) using MATLAB/Simulink API. Features a B-Dot detumbling controller and Nadir-pointing GNC loops."
+description: "This project involves the end-to-end development of an Attitude Control System (ADCS) for a 1U CubeSat. The simulation architecture was constructed programmatically using the MATLAB/Simulink API, allowing for rapid parameter iteration and a \"Digital Twin\" approach to GNC (Guidance, Navigation, and Control) development. "
 files:
   - name: "Technical Report"
     path: "CubeSat_ADCS_Report.pdf"
@@ -16,9 +16,6 @@ files:
   - name: "3D Visualization Script"
     path: "visualize_cubesat.m"
 ---
-
-## Overview
-This project involves the end-to-end development of an Attitude Control System (ADCS) for a 1U CubeSat. The simulation architecture was constructed programmatically using the MATLAB/Simulink API, allowing for rapid parameter iteration and a "Digital Twin" approach to GNC (Guidance, Navigation, and Control) development.
 
 ## Key Features
 - **Programmatic Model Generation:** Built entirely through code, resolving critical API dimension errors and ensuring a robust simulation framework.

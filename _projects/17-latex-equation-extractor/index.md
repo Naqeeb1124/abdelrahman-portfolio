@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Latex Equation Extractor"
-description: "A script that extracts the equations from a screenshot (image) and returns the corresponding latex code for the equation."
+description: "Project description here"
 categories: [Web Development, TypeScript]
 ---
 

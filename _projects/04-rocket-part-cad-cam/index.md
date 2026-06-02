@@ -3,7 +3,7 @@ layout: default
 categories: [Aerospace, CAD, CAM, Mechanical Design]
 title: "Rocket Part CAD + CAM"
 image: "image.png"
-description: "Design and manufacturing processes for P-1003 and P-1004 Rocket Assemblies using external turning, drilling, boring, grooving, threading, and parting off.   "
+description: "Project description here"
 files:
   - name: "Final Report"
     path: "Final Report (Task 4) (REE 222) (Group 2).pdf"

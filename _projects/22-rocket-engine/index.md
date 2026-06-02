@@ -2,7 +2,7 @@
 layout: default
 categories: [Gas Dynamics, Propulsion, MATLAB]
 title: "Rocket Engine Design"
-description: "Gas dynamic analysis of a rocket engine nozzle, calculating flow properties and performance characteristics."
+description: "This project involves the gas dynamic analysis of a rocket engine. The goal is to design the nozzle and calculate key performance parameters based on isentropic flow relations and normal shock theories where applicable. "
 image: "rocket.png"
 files:
   - name: "Project Report"
@@ -10,9 +10,6 @@ files:
   - name: "Analysis Code"
     path: "RocketProject_uncommented.m"
 ---
-
-## Overview
-This project involves the gas dynamic analysis of a rocket engine. The goal is to design the nozzle and calculate key performance parameters based on isentropic flow relations and normal shock theories where applicable.
 
 ## Key Features
 - **Nozzle Analysis:** Determination of exit conditions and throat sizing.

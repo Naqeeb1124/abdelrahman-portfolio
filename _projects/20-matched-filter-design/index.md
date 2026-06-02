@@ -2,7 +2,7 @@
 layout: default
 categories: [Signal Processing, Communications, MATLAB]
 title: "Matched Filter Design"
-description: "Design and analysis of a matched filter for Pulse Amplitude Modulation (PAM) systems, analyzing Symbol Error Rate (SER)."
+description: "This project involves the design and implementation of a matched filter to maximize the signal-to-noise ratio (SNR) in a communication system. The focus is on analyzing the Symbol Error Rate (SER) for Pulse Amplitude Modulation (PAM) schemes. "
 image: "simu-prob.png"
 files:
   - name: "Project Report"
@@ -12,9 +12,6 @@ files:
   - name: "Simulink Model"
     path: "pam_ser_v9_fixed.slx"
 ---
-
-## Overview
-This project involves the design and implementation of a matched filter to maximize the signal-to-noise ratio (SNR) in a communication system. The focus is on analyzing the Symbol Error Rate (SER) for Pulse Amplitude Modulation (PAM) schemes.
 
 ## Key Features
 - **Matched Filter Implementation:** Designed to optimize detection in the presence of additive white Gaussian noise (AWGN).
