@@ -3,7 +3,7 @@ layout: default
 categories: [Aerospace, Mechanical Design, Aerodynamics]
 title: "Glider Design Project"
 image: "image.png"
-description: "Project description here"
+description: "Designed, built, and flight-tested a 22.6 g balsa-wood glider. The airfoil-shaped wing, raised from aspect ratio 8 to 16 to cut induced drag, and the tail were sized from OpenVSP analysis of CL, CD, and CM versus angle of attack. The glider flew 34 m in open-field testing. Team of 3."
 files:
   - name: "Project Report"
     path: "Glider Design project report team 4.pdf"

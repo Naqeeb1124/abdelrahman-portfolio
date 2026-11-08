@@ -2,7 +2,7 @@
 layout: default
 categories: [Programming, Data Structures & Algorithms]
 title: "Ambulance Management System"
-description: "Project description here"
+description: "C++ simulation of ambulance dispatch across multiple hospitals. Emergency patients are served by severity, with car-type rules for special and normal patients, request cancellations, forwarding of emergencies between hospitals, and summary statistics. A team project for CIE 205 (Data Structures & Algorithms)."
 link: https://github.com/Fatma-Hassaan/Ambulance_management_system
 files:
   - name: "Full code(ZIP)"

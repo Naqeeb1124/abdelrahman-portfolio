@@ -26,12 +26,23 @@
       </div>
     {% endif %}
 
+    {% if page.link %}
+      <p><a href="{{ page.link }}" target="_blank" rel="noopener">Source code on GitHub</a></p>
+    {% endif %}
+
     <div class="content">
       {{ content }}
 
       {% if page.files %}
         {% assign project_folder = page.path | split: '/' | slice: 1, 1 | first %}
         {% assign project_base = '/projects/' | append: project_folder | append: '/' %}
+        {% comment %}
+          GitHub Pages serves Git LFS files as tiny pointer files, not the real content.
+          Files whose extension is tracked by LFS (keep this list in sync with .gitattributes)
+          are linked through GitHub's LFS media endpoint instead.
+        {% endcomment %}
+        {% assign lfs_exts = "stl,step,stp,iges,igs,sldprt,sldasm,ipt,iam,f3d,dwg,dxf,3mf,obj,mph,zip,ste,gen,cwr" | split: "," %}
+        {% assign lfs_base = "https://media.githubusercontent.com/media/" | append: site.repository | append: "/main/_projects/" | append: project_folder | append: "/" %}
 
         {% for file in page.files %}
           {% assign ext = file.path | split: '.' | last | downcase %}
@@ -49,8 +60,11 @@
         <h2>Additional Files</h2>
         <ul>
           {% for file in page.files %}
+            {% assign file_ext = file.path | split: '.' | last | downcase %}
             {% if file.path contains '://' %}
               <li><a href="{{ file.path }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
+            {% elsif lfs_exts contains file_ext %}
+              <li><a href="{{ lfs_base }}{{ file.path | uri_escape }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
             {% else %}
               <li><a href="{{ project_base | append: file.path | relative_url }}" target="_blank" rel="noopener">{{ file.name }}</a></li>
             {% endif %}
@@ -61,7 +75,7 @@
   </main> 
 
   <footer>
-    <p>&copy; <span id="current-year"></span> Abdelrahman Mohammed</p>
+    <p>&copy; <span id="current-year"></span> Abdelrahman Mohamed Alnaqeeb</p>
   </footer>
 
   <script>

@@ -2,7 +2,7 @@
 layout: default
 categories: [Aerospace, Orbital Mechanics, MATLAB, Math]
 title: "Jupiter Icy Moons Explorer Investigation"
-description: "Project description here"
+description: "Reconstruction of ESA's JUICE trajectory to Jupiter. Phase A extracts flyby events and state vectors from NAIF SPICE kernels. Phase B solves Lambert arcs between encounters and optimizes deep-space-maneuver timing with fmincon (SQP) to minimize delta-v and match ESA's reference trajectory."
 image: "image.png"
 files:
   - name: "Mission Analysis Report"
@@ -19,7 +19,7 @@ files:
     path: "phaseB_uncommented.m"
 ---
  
-Abdelrahman Al Naqeeb 
+Abdelrahman Mohamed Alnaqeeb  
 March 2025 (updated on January 2026)
 
 ## Project Phases

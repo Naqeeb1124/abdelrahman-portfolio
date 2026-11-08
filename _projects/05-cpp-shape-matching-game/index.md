@@ -2,13 +2,12 @@
 layout: default
 categories: [Programming]
 title: "Shape Hunt Game"
-description: "Project description here"
+description: "Object-oriented C++ puzzle game built on the CMU Graphics library. Six composite shapes are built from basic shapes through inheritance and polymorphism, with rotate, resize, and flip operations, progressive levels, scoring, and save/load."
 link: https://github.com/Naqeeb1124/FOR-C-PROJECT
 files:
   - name: "Full ZIP file"
     path: "ShapeHuntGame.zip"
 ---
-#
 A C++ implementation of the Shape Hunt game using object-oriented programming principles and the CMU Graphics library.
 
 ## Project Structure

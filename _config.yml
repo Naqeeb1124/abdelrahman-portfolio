@@ -1,8 +1,9 @@
-title: "Abdelrahman Mohamed — Engineering Portfolio"
+title: "Abdelrahman Mohamed Alnaqeeb — Engineering Portfolio"
 email: "abdelrahman11246@gmail.com"
-description: "A collection of engineering and aerospace projects."
+description: "Aerospace engineering projects in guidance and control, optimization, CFD, and mechanical design."
 baseurl: "/abdelrahman-portfolio"
-url: "https://naqeeb1124.github.io/abdelrahman-portfolio" # Replace with your GitHub Pages URL
+url: "https://naqeeb1124.github.io"
+repository: "Naqeeb1124/abdelrahman-portfolio"
 
 # Collections
 collections:
@@ -41,10 +42,6 @@ exclude:
   - Gemfile.lock
   - node_modules/
   - vendor/
-
-# Include specific files or folders
-include:
-  - _projects
 
 
 # GitHub Pages settings

@@ -3,7 +3,7 @@ layout: default
 categories: [Aerospace, CAD, CAM, Mechanical Design]
 title: "Rocket Part CAD + CAM"
 image: "image.png"
-description: "Project description here"
+description: "Manufacturing plan for two parts of a mini rocket assembly (P-1003 and P-1004). Parts were modeled in SolidWorks and CNC-turning toolpaths built in Mastercam (turning, drilling, boring, grooving, internal threading). Theoretical machining times are compared with the actual times."
 files:
   - name: "Final Report"
     path: "Final Report (Task 4) (REE 222) (Group 2).pdf"
@@ -11,12 +11,8 @@ files:
     path: "parts-cad-cam/part1004-cad.pdf"
   - name: "Part 1004 CAD Drawing"
     path: "parts-cad-cam/part1004-cad.SLDDRW"
-  - name: "Part 1003 CAD"
-    path: "parts-cad-cam/P1003.PDF"
-  - name: "Part 1003 STEP File"
-    path: "parts-cad-cam/P1003.stp"
-  - name: "Part 1004 CAM File"
-    path: "parts-cad-cam/cam-part1004.emcam"
+  - name: "Part 1004 CAM File (Mastercam)"
+    path: "parts-cad-cam/cam-p1004.emcam"
 ---
  
 ## Institution

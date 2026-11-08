@@ -1,15 +1,15 @@
 ---
 layout: default
 title: "Latex Equation Extractor"
-description: "Project description here"
+description: "Web app that pulls every equation out of a LaTeX document into a separate, clean LaTeX file, useful for reviewing, organizing, or reusing equations from long reports. Built with TypeScript and deployed on Vercel."
 categories: [Web Development, TypeScript]
+link: https://github.com/Naqeeb1124/latex-equation-extractor
 ---
 
 ## Project Overview
 
-This project is a simple Python script designed to extract all mathematical equations from a LaTeX file and save them into a new, separate LaTeX file. This can be useful for organizing, reviewing, or reusing equations from larger documents.
+The app extracts all mathematical equations from a LaTeX document into a new, separate LaTeX file. This is useful for organizing, reviewing, or reusing equations from larger documents.
 
 ## Live Demo
 
-You can access the live demo of the web application here: [Latex Equation Extractor](https://latex-equation-extractor.vercel.app/)  
-You can also access the source code (Git repository) [here](https://github.com/Naqeeb1124/latex-equation-extractor)
+Try it here: [Latex Equation Extractor](https://latex-equation-extractor.vercel.app/)

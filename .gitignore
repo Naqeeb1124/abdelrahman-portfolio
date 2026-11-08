@@ -14,7 +14,9 @@ _site/
 __pycache__/
 *.pyc
 .venv/
+venv/
 .env
+node_modules/
 
 # C/C++
 build/
@@ -22,11 +24,17 @@ build/
 *.obj
 *.exe
 
-# MATLAB
+# MATLAB / Simulink caches
 *.asv
+slprj/
+*.slxc
 
 # VS Code
 .vscode/
+
+# Tool scratch files
+.hermes-tmp*
+.dsh-progress/
 
 # Mac/Win
 Icon?

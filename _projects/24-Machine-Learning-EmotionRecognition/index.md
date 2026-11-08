@@ -20,9 +20,9 @@ The pipeline involves several key steps:
 5. **Evaluation**: Assessing the model using accuracy scores, classification reports, and a confusion matrix.
 
 ## Results
-The model achieved high accuracy in distinguishing between the different emotions in a controlled environment. 
-- **Accuracy**: 100% (on synthetic/demo data)
-- **Visuals**: Included MFCC spectrograms and a confusion matrix to visualize model performance.
+This is a pipeline demonstration. No recorded speech dataset is included, so the script trains and tests on synthetic tones (one frequency per emotion label).
+- **Accuracy:** 100% on 5 synthetic test samples. This only confirms the pipeline runs end to end; it says nothing about real emotion recognition.
+- **Visuals:** MFCC spectrogram and confusion matrix.
 
-## Conclusion
-MFCC features combined with ensemble learning methods like Random Forest provide a robust baseline for audio-based emotion recognition tasks.
+## Next step
+Evaluating on a real labeled speech corpus (e.g. RAVDESS or TESS) is required before drawing any conclusion about performance.

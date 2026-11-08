@@ -18,10 +18,9 @@ files:
 - **Visualization**: Generates an ROC curve to visualize the model's diagnostic performance.
 
 ## Methodology
-The project utilizes the Scikit-learn Breast Cancer Wisconsin dataset. The workflow includes data normalization, model training with ensemble methods, and rigorous evaluation using cross-validation and performance metrics like the area under the ROC curve.
+The project uses the Scikit-learn Breast Cancer Wisconsin dataset (569 samples, 30 features) with an 80/20 train/test split, feature standardization, and a Random Forest classifier.
 
-## Results
-The Random Forest model provides a high-confidence diagnostic tool, achieving significant accuracy and a strong ROC-AUC score, which is crucial for medical applications where minimizing false negatives is vital.
-
-## Conclusion
-Integrating machine learning into medical diagnostics can provide clinicians with valuable second opinions, potentially leading to earlier and more accurate cancer detection.
+## Results (held-out test set, 114 samples)
+- **Accuracy:** 96.5%
+- **ROC-AUC:** 0.995
+- **Confusion matrix:** 40 / 3 / 1 / 70. Note that 3 malignant tumors were misclassified as benign; in a diagnostic setting, false negatives like these are the costly error.

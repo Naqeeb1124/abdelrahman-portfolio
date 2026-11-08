@@ -2,7 +2,7 @@
 layout: default
 categories: [Web Development, Programming]
 title: "Empower Kids"
-description: "Project description here"
+description: "Business plan for a children's life-skills workshop program (market analysis, business model, financial projections), plus the program's responsive single-page website built with React and Vite."
 link: https://github.com/Naqeeb1124/Child-development-Project-Website
 ---
  

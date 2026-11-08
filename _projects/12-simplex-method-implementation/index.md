@@ -2,7 +2,7 @@
 layout: default
 categories: [Programming, Math]
 title: "Implementation and Analysis of the Simplex Method for Linear Programming"
-description: "Project description here"
+description: "MATLAB implementation of the tableau simplex method (standard-form conversion, pivot selection, tableau updates). It is applied to transportation-network and production-scheduling problems and compared against modern solvers, with sensitivity and duality analysis. Team of 2."
 files:
   - name: "Numerical Analysis Report"
     path: "numerical-2.pdf"

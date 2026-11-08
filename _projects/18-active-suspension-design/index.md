@@ -2,7 +2,7 @@
 layout: default
 title: "Active Suspension Design"
 image: "image.png"
-description: "Project description here"
+description: "LQR active suspension for a quarter-car model, with state-space modeling and tuning of the Q and R weights. It is verified in Simulink against a 0.1 m step bump and ISO 8608 random road profiles, with the goal of keeping suspension deflection within ±0.1 m and oscillations dying out within 5 s. Includes a MATLAB/Python animation. Team of 4."
 categories: [Control Systems, MATLAB, Python]
 files:
   - name: "Project Report"

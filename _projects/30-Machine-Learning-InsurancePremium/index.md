@@ -21,11 +21,11 @@ files:
 
 ## Methodology
 - **Data Preprocessing**: Modular pipeline for cleaning and transforming medical cost datasets.
-- **Machine Learning**: Random Forest Regressor achieved over 89% accuracy, outperforming other baseline models.
+- **Machine Learning**: Random Forest Regressor reached R² = 0.899 on the test set, outperforming the linear baseline.
 - **Deployment**: A multi-page Streamlit dashboard providing a professional user interface for the predictive engine.
 
 ## Results
-- **Accuracy**: 89.87% R² Score with Random Forest.
+- **R²**: 0.899 with Random Forest (Medical Cost Personal dataset, 1,338 records, 80/20 split).
 - **Insights**: Smoking was identified as the #1 cost driver, accounting for nearly 49% of the premium determination.
 - **Performance**: Significantly reduced prediction errors compared to simple linear models.
 

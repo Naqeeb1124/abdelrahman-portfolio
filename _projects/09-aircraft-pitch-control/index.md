@@ -3,7 +3,7 @@ layout: default
 categories: [Aerospace, Control Systems]
 title: "Aircraft Pitch System Control"
 image: "image.png"
-description: "Project description here"
+description: "Classical control design for an aircraft pitch-attitude model: pole-zero, Routh-Hurwitz, and root-locus analysis, then PID tuning by hand and in Simulink. The final gains (Kp = 5.185, Ki = 1.74, Kd = 2.98) meet every specification: 7.5% overshoot, 0.413 s rise time, 9.25 s settling time, and zero steady-state error. Team of 2."
 files:
   - name: "Control Project Report"
     path: "control_project-3.pdf"

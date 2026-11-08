@@ -2,7 +2,7 @@
 layout: default
 categories: [Web Development, Aerospace, CAD, Python, Programming]
 title: "Web-Based Airfoil Coordinate Generator"
-description: "Project description here"
+description: "Web tool that generates NACA 4-digit airfoil coordinates and converts coordinate CSV files into the XYZ curve format SolidWorks imports. It has a Python/Flask backend and a React frontend, with a public demo."
 files:
   - name: "Full source code (ZIP)"
     path: "full-source-code.zip"
@@ -10,10 +10,10 @@ files:
     path: "run_application.py"
   - name: "Quick Start Guide"
     path: "QUICK_START.md"
-  - name: "Backend Source"
-    path: "airfoil-backend/"
-  - name: "Frontend Source"
-    path: "airfoil-generator/"
+  - name: "Backend Source (GitHub)"
+    path: "https://github.com/Naqeeb1124/abdelrahman-portfolio/tree/main/_projects/16-airfoil-coord-generator-xyz/airfoil-backend"
+  - name: "Frontend Source (GitHub)"
+    path: "https://github.com/Naqeeb1124/abdelrahman-portfolio/tree/main/_projects/16-airfoil-coord-generator-xyz/airfoil-generator"
 ---
 
 ## Project Overview

@@ -2,12 +2,11 @@
 layout: default
 categories: [Mechanical Design, Environmental, Fluid Dynamics]
 title: "Aquaponics System Design"
-description: "Project description here"
+description: "Fluid-mechanics design of a closed-loop aquaponics system: a 1,000 L fish tank, a gravel grow bed, and 300 L/h circulation. The bell siphon, venturi meter, and venturi aerator were sized from flow-rate and Reynolds-number analysis, for an estimated cost of $1,900."
 files:
   - name: "Project Report"
     path: "Aquaponics system design.pdf"
 ---
-#
 ## Institution
 Zewail City of Science and Technology  
 Course: ENGR207 - Fluid Mechanics
