@@ -2,7 +2,7 @@
 
 **Website:** https://naqeeb1124.github.io/abdelrahman-portfolio/
 **Location:** Dubai, UAE / Giza, Egypt
-**Email:** abdelrahman11246@gmail.com
+**Email:** abdelrahmanalnaqeeb@gmail.com
 
 B.Sc. Aerospace Engineering student at Zewail City of Science and Technology (expected June 2027). Research interests: guidance, navigation and control (flight control, multi-agent guidance) and optimization (PDE-constrained and topology optimization, optimal control, CFD).
 
@@ -15,7 +15,6 @@ This repository is the source of the website. Each project lives in `_projects/<
 - [Topology Optimization of a Satellite Bracket](https://naqeeb1124.github.io/abdelrahman-portfolio/projects/14-topopt-satellite-bracket/index): SIMP and adjoint sensitivities for a 65% mass reduction
 - [ASME Cold Plate Design Competition](https://naqeeb1124.github.io/abdelrahman-portfolio/projects/08-cold-plate-topopt/index): 10 fin concepts and a topology-optimized channel layout
 - [Active Suspension Design (LQR)](https://naqeeb1124.github.io/abdelrahman-portfolio/projects/18-active-suspension-design/index): quarter-car LQR with ISO 8608 road profiles
-- [Aircraft Pitch System Control](https://naqeeb1124.github.io/abdelrahman-portfolio/projects/09-aircraft-pitch-control/index): root locus and PID tuning in MATLAB/Simulink
 - [Robotic Arm Design & Control](https://naqeeb1124.github.io/abdelrahman-portfolio/projects/19-robotic-arm/index): 3-DOF kinematics with a MATLAB digital twin and Arduino
 - [Simplex Method for Linear Programming](https://naqeeb1124.github.io/abdelrahman-portfolio/projects/12-simplex-method-implementation/index): MATLAB implementation
 - [CFD Analysis of NACA0015 Airfoil](https://naqeeb1124.github.io/abdelrahman-portfolio/projects/11-naca0015-cfd-study/index): Ansys, k-omega SST, comparison with experiment

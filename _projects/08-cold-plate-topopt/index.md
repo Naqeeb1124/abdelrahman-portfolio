@@ -3,7 +3,7 @@ layout: default
 categories: [Mechanical Design, Fluid Dynamics, Topology Optimization]
 title: "ASME Cold Plate Design Competition"
 image: "image.png"
-description: "Entry for the ASME K-16 / IEEE EPS Cold Plate Design Competition: an additively manufactured copper cold plate that must dissipate 350 W. Ten fin concepts were simulated and ranked by a weighted figure of merit (thermal 40%, hydraulic 30%, mass 30%). A hybrid pin-fin and channel design ranked first, followed by a topology-optimized channel layout. Team of 3."
+description: "Entry for the ASME K-16 / IEEE EPS Cold Plate Design Competition: an additively manufactured copper cold plate that must dissipate 350 W. Ten fin concepts were simulated and ranked by a weighted figure of merit (thermal 40%, hydraulic 30%, mass 30%). A hybrid pin-fin and channel design ranked first, followed by a topology-optimized channel layout. Team of 3; I did most of the work."
 files:
   - name: "Cold Plate Report"
     path: "cold_plate.pdf"

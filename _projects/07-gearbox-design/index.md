@@ -3,7 +3,7 @@ layout: default
 categories: [Mechanical Design, CAD]
 title: "Two-Stage Gearbox Design"
 image: "image.png"
-description: "Two-stage gearbox with a total ratio of 20. Covers gear sizing and force/torque analysis, AISI 1045 steel shaft design (factors of safety 1.21 to 5.76), and bearing and key selection. The design was checked in Autodesk Inventor and drawn in SolidWorks. Team of 3."
+description: "Two-stage gearbox with a total ratio of 20. Covers gear sizing and force/torque analysis, AISI 1045 steel shaft design (factors of safety 1.21 to 5.76), and bearing and key selection. The design was checked in Autodesk Inventor and drawn in SolidWorks. Team of 3; I did most of the work."
 files:
   - name: "Gearbox Assembly STEP File"
     path: "Gearbox Assembly.stp"

@@ -3,7 +3,7 @@ layout: default
 categories: [Aerospace, Math, Python, Aerodynamics]
 title: "Joukowsky Airfoils"
 image: "image.png"
-description: "Potential-flow theory of Joukowsky airfoils. Derives the stream functions for flow around a circular cylinder, maps them conformally onto an airfoil, and includes a Python program that visualizes the transform and the resulting flow field. Team of 3."
+description: "Potential-flow theory of Joukowsky airfoils. Derives the stream functions for flow around a circular cylinder, maps them conformally onto an airfoil, and includes a Python program that visualizes the transform and the resulting flow field. Team of 3; I did most of the work."
 files:
   - name: "Project Report"
     path: "Airfoils_and_Joukowsky_transform.pdf"

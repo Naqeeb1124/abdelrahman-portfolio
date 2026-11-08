@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Robotic Arm Design & Control"
-description: "Design, kinematic modeling, and build of a 3-DOF servo-driven robotic arm. Analytical forward and inverse kinematics run in a MATLAB digital twin that commands the Arduino-controlled hardware over serial. The structure is a lightweight 3 mm wood truss designed around the servos' torque limits. Team of 4."
+description: "Design, kinematic modeling, and build of a 3-DOF servo-driven robotic arm. Analytical forward and inverse kinematics run in a MATLAB digital twin that commands the Arduino-controlled hardware over serial. The structure is a lightweight 3 mm wood truss designed around the servos' torque limits. Team of 4; I did most of the work."
 categories: [Mechatronics, Robotics, Control Systems, CAD]
 image: "robitic-arm.png"
 files:
